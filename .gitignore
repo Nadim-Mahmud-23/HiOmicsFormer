@@ -24,10 +24,12 @@ logs/
 *.ckpt
 
 # ============================================================================
-# Generated Figures (except extracted_figures which may be for publication)
+# Generated Figures (Keep publication figures, ignore runtime figures)
 # ============================================================================
-figures/
-!extracted_figures/
+figures/main/
+figures/supplementary/
+# Keep publication figures
+!figures/publication/
 
 # ============================================================================
 # Python
