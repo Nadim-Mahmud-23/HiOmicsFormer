@@ -1,214 +1,29 @@
-# HiOmicsFormer .gitignore
-
-# ============================================================================
-# Data Files (Large datasets should not be committed)
-# ============================================================================
-data/
-*.csv
-*.h5
-*.hdf5
-*.pkl
-*.pickle
-*.npy
-*.npz
-
-# ============================================================================
-# Model Checkpoints and Results
-# ============================================================================
-checkpoints/
-results/
-processed_data/
-logs/
-*.pth
-*.pt
-*.ckpt
-
-# ============================================================================
-# Generated Figures (Keep publication figures, ignore runtime figures)
-# ============================================================================
-figures/main/
-figures/supplementary/
-# Keep publication figures
-!figures/publication/
-
-# ============================================================================
 # Python
-# ============================================================================
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+dist/
+build/
+.eggs/
 
-# PyInstaller
-*.manifest
-*.spec
-
-# ============================================================================
-# Jupyter Notebook
-# ============================================================================
+# Jupyter
 .ipynb_checkpoints/
-*-checkpoint.ipynb
 
-# Jupyter Notebook local settings
-.jupyter/
+# Data (do not push large CSVs)
+data/MLOmics/
+data/*.csv
+*.csv.gz
 
-# ============================================================================
-# IDE and Editors
-# ============================================================================
-# VSCode
-.vscode/
-*.code-workspace
-
-# PyCharm
-.idea/
-*.iml
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Vim
-*.swp
-*.swo
-*~
-
-# Emacs
-*~
-\#*\#
-.\#*
-
-# ============================================================================
-# macOS
-# ============================================================================
+# OS
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# ============================================================================
-# Windows
-# ============================================================================
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
 
-# ============================================================================
-# Linux
-# ============================================================================
-*~
-.directory
-.Trash-*
+# IDE
+.vscode/
+.idea/
+*.swp
 
-# ============================================================================
-# Logs and Temporary Files
-# ============================================================================
-*.log
-*.tmp
-*.temp
-tmp/
-temp/
-
-# ============================================================================
-# Weights & Biases (Experiment Tracking)
-# ============================================================================
-wandb/
-
-# ============================================================================
-# Profiling
-# ============================================================================
-*.prof
-
-# ============================================================================
-# Testing
-# ============================================================================
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-
-# ============================================================================
-# Documentation Build
-# ============================================================================
-docs/_build/
-site/
-
-# ============================================================================
-# Compressed Files
-# ============================================================================
-*.zip
-*.tar.gz
-*.tar
-*.rar
-*.7z
-
-# ============================================================================
-# Environment Variables
-# ============================================================================
+# Environment
 .env
-.env.local
-.env.*.local
-
-# ============================================================================
-# GPU/Hardware Specific
-# ============================================================================
-*.cu.o
-*.cubin
-*.fatbin
-
-# ============================================================================
-# Keep These Files (Exceptions)
-# ============================================================================
-!.gitkeep
-!README.md
-!LICENSE
-!requirements.txt
-!local_setup.py
-!*.ipynb
+venv/
+.venv/

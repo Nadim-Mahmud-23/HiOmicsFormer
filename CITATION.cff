@@ -1,41 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "HiOmicsFormer: Hierarchical Multi-Modal Transformer with Cross-Omics Contrastive Learning for Pan-Cancer Subtype Discovery and Biomarker Identification"
-version: 1.0.0
-date-released: 2026-02-10
+title: "HiOmicsFormer"
 authors:
-  - family-names: "Mahmud"
-    given-names: "Nadim"
-    email: nadim.mahmud.dipu@g.bracu.ac.bd
-    orcid: "https://orcid.org/0000-0000-0000-0000"  # Replace with your ORCID
-repository-code: "https://github.com/Nadim-Mahmud-23/HiOmicsFormer"
+  - family-names: "Dipu"
+    given-names: "Nadim Mahmud"
+    email: "nadim.mahmud.dipu@g.bracu.ac.bd"
+    affiliation: "Brac University"
+    orcid: ""
+version: "1.0.0"
+date-released: "2025-01-01"
+license: MIT
+repository-code: "https://github.com/nadimmahmuddipu/HiOmicsFormer"
 keywords:
-  - multi-omics integration
+  - multi-omics
   - transformer
-  - cancer subtypes
+  - pan-cancer
   - biomarker discovery
-  - deep learning
   - contrastive learning
-  - TCGA
-  - bioinformatics
-  - machine learning
-license: CC-BY-4.0
-abstract: |
-  HiOmicsFormer is a novel deep learning framework for integrative multi-omics
-  analysis that enables unsupervised cancer subtype discovery and biomarker
-  identification. By leveraging hierarchical transformer architectures with
-  cross-omics contrastive learning, HiOmicsFormer integrates four complementary
-  omics modalities (mRNA, miRNA, DNA methylation, and copy number variation)
-  from 8,314 patients across 32 cancer types in The Cancer Genome Atlas (TCGA).
-
-preferred-citation:
-  type: article
-  authors:
-    - family-names: "Mahmud"
-      given-names: "Nadim"
-  title: "HiOmicsFormer: Hierarchical Multi-Modal Transformer with Cross-Omics Contrastive Learning for Pan-Cancer Subtype Discovery and Biomarker Identification"
-  journal: "Advances in Biomarker Sciences and Technology"
-  year: 2026
-  status: "in preparation"
-  # doi: "10.xxxx/xxxxx"  # Add DOI upon publication
+  - deep embedded clustering
