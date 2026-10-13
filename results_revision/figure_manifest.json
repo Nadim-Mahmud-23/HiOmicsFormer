@@ -1,0 +1,62 @@
+[
+  {
+    "figure": "fig11_cluster_composition.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 18:09"
+  },
+  {
+    "figure": "fig1_dataset_overview.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 18:29"
+  },
+  {
+    "figure": "fig2_preprocessing.png",
+    "regenerated_this_session": false,
+    "mtime": "2026-02-14 23:01"
+  },
+  {
+    "figure": "fig3_training_embeddings.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 18:29"
+  },
+  {
+    "figure": "fig4_baseline_comparison.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 18:20"
+  },
+  {
+    "figure": "fig5_biomarkers.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 18:29"
+  },
+  {
+    "figure": "fig6_enrichment.png",
+    "regenerated_this_session": false,
+    "mtime": "2026-02-15 00:10"
+  },
+  {
+    "figure": "fig7_survival_analysis.png",
+    "regenerated_this_session": false,
+    "mtime": "2026-02-15 00:09"
+  },
+  {
+    "figure": "fig7b_stratified_survival.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 18:09"
+  },
+  {
+    "figure": "fig8_imputation_sensitivity.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 17:12"
+  },
+  {
+    "figure": "fig8_imputation_sensitivity_CONTAMINATED.png",
+    "regenerated_this_session": true,
+    "mtime": "2026-07-03 16:50"
+  },
+  {
+    "figure": "fig9_subanalysis.png",
+    "regenerated_this_session": false,
+    "mtime": "2026-02-15 00:50"
+  }
+]

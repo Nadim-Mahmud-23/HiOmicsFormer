@@ -1,0 +1,26 @@
+{
+  "mRNA": {
+    "raw_missing": 0.17041376933129657,
+    "eff_missing": 0.15107042136394327,
+    "null_jaccard": 0.012716174974567653,
+    "skipped": 0.0
+  },
+  "miRNA": {
+    "raw_missing": 0.6046274812741804,
+    "eff_missing": 0.5517376859819423,
+    "null_jaccard": 0.0205761316872428,
+    "skipped": 0.0
+  },
+  "Methy": {
+    "raw_missing": 0.007758168265691498,
+    "eff_missing": 0.006885840998685939,
+    "null_jaccard": 0.012658227848101266,
+    "skipped": 0.0
+  },
+  "CNV": {
+    "raw_missing": 0.0019716942192405406,
+    "eff_missing": 0.002818659658344284,
+    "null_jaccard": 0.012658227848101266,
+    "skipped": 0.0
+  }
+}

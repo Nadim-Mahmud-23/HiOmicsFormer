@@ -2,20 +2,25 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 title: "HiOmicsFormer"
+abstract: >-
+  Code and results for "HiOmicsFormer revisited: normalisation artefacts in a public multi-omics
+  benchmark explain apparent pan-cancer subtypes": a multi-omics transformer with deep embedded
+  clustering, and the re-evaluation that traced its apparent pan-cancer clusters to inconsistent
+  file scaling in the MLOmics benchmark.
 authors:
   - family-names: "Dipu"
     given-names: "Nadim Mahmud"
     email: "nadim.mahmud.dipu@g.bracu.ac.bd"
     affiliation: "Brac University"
-    orcid: ""
-version: "1.0.0"
-date-released: "2025-01-01"
+version: "2.0.0"
+date-released: "2026-10-13"
 license: MIT
-repository-code: "https://github.com/nadimmahmuddipu/HiOmicsFormer"
+repository-code: "https://github.com/Nadim-Mahmud-23/HiOmicsFormer"
 keywords:
   - multi-omics
   - transformer
-  - pan-cancer
-  - biomarker discovery
-  - contrastive learning
   - deep embedded clustering
+  - batch effects
+  - data quality
+  - reproducibility
+  - TCGA

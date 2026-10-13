@@ -1,0 +1,7 @@
+{
+  "row_alignment": true,
+  "embeddings_finite": true,
+  "processed_finite": true,
+  "deterministic_inference_maxdiff": 0.0,
+  "deterministic_inference_ok": true
+}

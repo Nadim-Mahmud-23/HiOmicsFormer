@@ -1,0 +1,40 @@
+{
+  "single_archive": {
+    "same_sample_ids": true,
+    "same_labels": true,
+    "same_batch": true,
+    "same_selected_features": {
+      "mRNA": true,
+      "miRNA": true,
+      "Methy": true,
+      "CNV": true
+    },
+    "same_scaler_means": {
+      "mRNA": true,
+      "miRNA": true,
+      "Methy": true,
+      "CNV": true
+    },
+    "n": 2269
+  },
+  "all": {
+    "same_sample_ids": true,
+    "same_labels": true,
+    "same_batch": true,
+    "same_selected_features": {
+      "mRNA": true,
+      "miRNA": true,
+      "Methy": true,
+      "CNV": true
+    },
+    "same_scaler_means": {
+      "mRNA": true,
+      "miRNA": true,
+      "Methy": true,
+      "CNV": true
+    },
+    "n": 3044
+  },
+  "single_archive_embedding_max_abs_diff": 0.0,
+  "single_archive_clusters_identical": true
+}

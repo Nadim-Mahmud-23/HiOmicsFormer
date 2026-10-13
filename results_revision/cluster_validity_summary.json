@@ -1,0 +1,13 @@
+{
+  "overall_purity": 0.21484888304862024,
+  "cramers_v": 0.5790246656287855,
+  "chi_p": 0.0,
+  "nmi": 0.38794483058861934,
+  "ari": 0.12370056472272252,
+  "n_sig_enrichments_fdr05": 11,
+  "technical_source": {
+    "variable": "dataset_source(clustering|classification)",
+    "cramers_v": 0.7967900034959384,
+    "chi_p": 0.0
+  }
+}

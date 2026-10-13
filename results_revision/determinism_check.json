@@ -1,0 +1,9 @@
+{
+  "silhouette_run1": 0.4957653284072876,
+  "silhouette_run2": 0.4957653284072876,
+  "silhouette_identical": true,
+  "embeddings_maxdiff": 9.5367431640625e-07,
+  "embeddings_close_atol_1e-4": true,
+  "device": "mps",
+  "note": "Identical seeds -> identical silhouette confirms determinism. On MPS, tiny (<1e-4) float differences may remain from nondeterministic GPU reductions; silhouette equality is the operative check."
+}

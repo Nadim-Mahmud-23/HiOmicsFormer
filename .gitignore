@@ -27,3 +27,12 @@ Thumbs.db
 .env
 venv/
 .venv/
+
+# Revision (R4): regenerable caches, third-party reference files, model weights (GitHub release assets)
+r2/cache/
+r3/cache_*/
+data/external/
+data/curated/
+*.pt
+*.log
+HiOmicsFormer_Elsevier_Submission/

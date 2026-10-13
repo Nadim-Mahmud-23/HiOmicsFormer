@@ -1,0 +1,34 @@
+{
+  "full-cohort model | Immune subtype (C1-C6)": {
+    "n_types": 9,
+    "median_ARI_model": 0.014288830210486292,
+    "median_ARI_input_PCA": 0.016507134786890584,
+    "median_NMI_model": 0.03037337008834099,
+    "median_NMI_input_PCA": 0.03923445811079893,
+    "types_model_better": 5
+  },
+  "full-cohort model | PanCanAtlas molecular subtype": {
+    "n_types": 10,
+    "median_ARI_model": 0.03480253555157806,
+    "median_ARI_input_PCA": 0.2583619288944379,
+    "median_NMI_model": 0.08050910306485042,
+    "median_NMI_input_PCA": 0.28112484140419125,
+    "types_model_better": 2
+  },
+  "single-archive model | Immune subtype (C1-C6)": {
+    "n_types": 7,
+    "median_ARI_model": 0.02145287007542113,
+    "median_ARI_input_PCA": 0.030846694149839617,
+    "median_NMI_model": 0.05893099466988705,
+    "median_NMI_input_PCA": 0.04474567704533759,
+    "types_model_better": 4
+  },
+  "single-archive model | PanCanAtlas molecular subtype": {
+    "n_types": 7,
+    "median_ARI_model": 0.05866063644830284,
+    "median_ARI_input_PCA": 0.24295264208616704,
+    "median_NMI_model": 0.09633416850353023,
+    "median_NMI_input_PCA": 0.31992642366408114,
+    "types_model_better": 0
+  }
+}

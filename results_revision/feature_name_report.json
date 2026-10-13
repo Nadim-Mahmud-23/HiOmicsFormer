@@ -1,0 +1,90 @@
+{
+  "mRNA": {
+    "status": "OK (biological identifiers)",
+    "placeholder_frac": 0.0025,
+    "bio_frac": 0.9625,
+    "examples": [
+      "COQ7",
+      "CD151",
+      "FAM83D",
+      "LOC100129518",
+      "GCHFR",
+      "RAB40C",
+      "MPHOSPH6",
+      "3-Mar",
+      "DHX33",
+      "DM1-AS",
+      "EXOC6",
+      "CCDC186",
+      "ACACB",
+      "FBXO33",
+      "C16orf45"
+    ]
+  },
+  "miRNA": {
+    "status": "OK (biological identifiers)",
+    "placeholder_frac": 0.0,
+    "bio_frac": 0.8821478382147838,
+    "examples": [
+      "hsa-mir-670",
+      "hsa-mir-3660",
+      "hsa-mir-4771-1",
+      "hsa-mir-4771-2",
+      "hsa-mir-4779",
+      "hsa-mir-320e",
+      "hsa-mir-4789",
+      "hsa-mir-4794",
+      "hsa-mir-3202-1",
+      "hsa-mir-6881",
+      "hsa-mir-4798",
+      "hsa-mir-4799",
+      "hsa-mir-3198-1",
+      "hsa-mir-4804",
+      "hsa-mir-5006"
+    ]
+  },
+  "Methy": {
+    "status": "OK (biological identifiers)",
+    "placeholder_frac": 0.0,
+    "bio_frac": 0.984,
+    "examples": [
+      "ABCC5",
+      "AMZ2",
+      "FANCC",
+      "NR2F2",
+      "ADCY10",
+      "LBX2",
+      "PTTG1",
+      "LRRC61",
+      "ADH5",
+      "GK",
+      "THEMIS",
+      "ZNF257",
+      "SLC23A3",
+      "DIRAS1",
+      "YDJC"
+    ]
+  },
+  "CNV": {
+    "status": "OK (biological identifiers)",
+    "placeholder_frac": 0.0,
+    "bio_frac": 0.9745,
+    "examples": [
+      "NIPAL3",
+      "PGAM2",
+      "CABLES2",
+      "ZNF668",
+      "SEPT11",
+      "ANGPT1",
+      "KDM1A",
+      "ZNF680",
+      "CHMP1A",
+      "LYRM1",
+      "PCYOX1L",
+      "PLCG2",
+      "PPHLN1",
+      "CHTOP",
+      "KANSL2"
+    ]
+  }
+}

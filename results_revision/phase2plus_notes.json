@@ -1,0 +1,67 @@
+{
+  "phase2": {
+    "overall_purity": 0.21484888304862024,
+    "cramers_v": 0.5790246656287855,
+    "chi_p": 0.0,
+    "nmi": 0.38794483058861934,
+    "ari": 0.12370056472272252,
+    "n_sig_enrichments_fdr05": 11,
+    "technical_source": {
+      "variable": "dataset_source(clustering|classification)",
+      "cramers_v": 0.7967900034959384,
+      "chi_p": 0.0
+    }
+  },
+  "phase3": {
+    "types_tested": 7,
+    "n_sig_fdr05": 0,
+    "min_logrank_p": 0.06445894791737435
+  },
+  "phase4": {
+    "method_overlap": [
+      {
+        "modality": "mRNA",
+        "attn_n": 50,
+        "recon_n": 50,
+        "overlap": 5,
+        "jaccard": 0.053,
+        "overlap_pct_of_50": 10.0
+      },
+      {
+        "modality": "miRNA",
+        "attn_n": 50,
+        "recon_n": 50,
+        "overlap": 4,
+        "jaccard": 0.042,
+        "overlap_pct_of_50": 8.0
+      },
+      {
+        "modality": "Methy",
+        "attn_n": 50,
+        "recon_n": 50,
+        "overlap": 2,
+        "jaccard": 0.02,
+        "overlap_pct_of_50": 4.0
+      },
+      {
+        "modality": "CNV",
+        "attn_n": 50,
+        "recon_n": 50,
+        "overlap": 4,
+        "jaccard": 0.042,
+        "overlap_pct_of_50": 8.0
+      }
+    ],
+    "curated": {
+      "status": "NOT RUN \u2014 curated files absent",
+      "expected_dir": "<repository>/data/curated"
+    }
+  },
+  "phase7": {
+    "row_alignment": true,
+    "embeddings_finite": true,
+    "processed_finite": true,
+    "deterministic_inference_maxdiff": 0.0,
+    "deterministic_inference_ok": true
+  }
+}

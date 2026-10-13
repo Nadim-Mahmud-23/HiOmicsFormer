@@ -1,0 +1,126 @@
+{
+  "full-cohort model": {
+    "mRNA": {
+      "panel_size": 2000,
+      "numeric_symbols_in_panel": 5,
+      "numeric_symbols_in_top50_gradient": 2,
+      "consensus_size": 5,
+      "jaccard_gradient_vs_reconstruction": 0.05263157894736842,
+      "top10_gradient": [
+        "SNORA77",
+        "LINC01886",
+        "ST7",
+        "43899",
+        "GIMAP6",
+        "NFATC2IP",
+        "MIR4645",
+        "H3F3B",
+        "SPSB2",
+        "RIC8A"
+      ]
+    },
+    "Methy": {
+      "panel_size": 2000,
+      "numeric_symbols_in_panel": 0,
+      "numeric_symbols_in_top50_gradient": 0,
+      "consensus_size": 2,
+      "jaccard_gradient_vs_reconstruction": 0.02040816326530612,
+      "top10_gradient": [
+        "GATA6",
+        "SERPINB6",
+        "LAMB2",
+        "FAM227B",
+        "SH3KBP1",
+        "ZBED5",
+        "NOMO3",
+        "AC007906-1",
+        "BCORL1",
+        "FERD3L"
+      ]
+    },
+    "CNV": {
+      "panel_size": 2000,
+      "numeric_symbols_in_panel": 0,
+      "numeric_symbols_in_top50_gradient": 0,
+      "consensus_size": 4,
+      "jaccard_gradient_vs_reconstruction": 0.041666666666666664,
+      "top10_gradient": [
+        "MARC2",
+        "MARCH6",
+        "ZC3H11B",
+        "LGR6",
+        "RP4-576H24-4",
+        "SEPT1",
+        "AGRP",
+        "MARCH10",
+        "TRIM46",
+        "POTEB3"
+      ]
+    },
+    "n_tests": 60,
+    "n_fdr_below_0.05": 0,
+    "min_fdr": 1.0
+  },
+  "single-archive model": {
+    "mRNA": {
+      "panel_size": 2000,
+      "numeric_symbols_in_panel": 4,
+      "numeric_symbols_in_top50_gradient": 0,
+      "consensus_size": 1,
+      "jaccard_gradient_vs_reconstruction": 0.010101010101010102,
+      "top10_gradient": [
+        "BLMH",
+        "MIR4292",
+        "EWSR1",
+        "ABCD4",
+        "SSBP1",
+        "MED13L",
+        "MIR10B",
+        "NOXA1",
+        "PLEKHG5",
+        "MOB3B"
+      ]
+    },
+    "Methy": {
+      "panel_size": 2000,
+      "numeric_symbols_in_panel": 0,
+      "numeric_symbols_in_top50_gradient": 0,
+      "consensus_size": 1,
+      "jaccard_gradient_vs_reconstruction": 0.010101010101010102,
+      "top10_gradient": [
+        "MYO1F",
+        "S100A8",
+        "PYHIN1",
+        "FRG2C",
+        "BIRC7",
+        "DIO2",
+        "OR2J3",
+        "FAM20C",
+        "GFRA4",
+        "NFIX"
+      ]
+    },
+    "CNV": {
+      "panel_size": 2000,
+      "numeric_symbols_in_panel": 0,
+      "numeric_symbols_in_top50_gradient": 0,
+      "consensus_size": 2,
+      "jaccard_gradient_vs_reconstruction": 0.02040816326530612,
+      "top10_gradient": [
+        "GFRA2",
+        "HMP19",
+        "IK",
+        "NIP7",
+        "CDRT4",
+        "STC1",
+        "KRBA2",
+        "ATP1B2",
+        "LAPTM4B",
+        "TEKT1"
+      ]
+    },
+    "n_tests": 60,
+    "n_fdr_below_0.05": 0,
+    "min_fdr": 1.0
+  }
+}

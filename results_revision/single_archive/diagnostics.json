@@ -1,0 +1,23 @@
+{
+  "pc1_var_pct": 65.01,
+  "pc_top5": [
+    65.01,
+    18.27,
+    6.93,
+    3.24,
+    1.24
+  ],
+  "effective_clusters": 2,
+  "cluster_sizes": [
+    0,
+    0,
+    82,
+    0,
+    2187
+  ],
+  "full_cohort_nmi": 0.012136197238304494,
+  "full_cohort_ari": -0.0013517328271333412,
+  "full_cohort_silhouette": 0.20828858017921448,
+  "survival_types_tested": 8,
+  "survival_sig_fdr05": 0
+}

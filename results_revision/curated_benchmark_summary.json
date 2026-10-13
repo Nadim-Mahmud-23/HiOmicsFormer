@@ -1,0 +1,38 @@
+{
+  "curated_sets": {
+    "MSigDB_Hallmark": 4384,
+    "MSigDB_C6": 10932
+  },
+  "modalities": {
+    "mRNA": {
+      "consensus_n": 1,
+      "used_list": "consensus",
+      "n_total": 1,
+      "n_mappable": 1,
+      "n_excel": 0,
+      "n_noncoding_or_other": 0,
+      "benchmark_min_p": 1.0,
+      "benchmark_any_sig_fdr": false
+    },
+    "Methy": {
+      "consensus_n": 1,
+      "used_list": "consensus",
+      "n_total": 1,
+      "n_mappable": 1,
+      "n_excel": 0,
+      "n_noncoding_or_other": 0,
+      "benchmark_min_p": 0.526,
+      "benchmark_any_sig_fdr": false
+    },
+    "CNV": {
+      "consensus_n": 2,
+      "used_list": "consensus",
+      "n_total": 2,
+      "n_mappable": 2,
+      "n_excel": 0,
+      "n_noncoding_or_other": 0,
+      "benchmark_min_p": 0.7471160580290146,
+      "benchmark_any_sig_fdr": false
+    }
+  }
+}

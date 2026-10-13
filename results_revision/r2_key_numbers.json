@@ -1,0 +1,737 @@
+{
+  "within_cancer_silhouette": {
+    "per_type": {
+      "ACC": 0.775,
+      "COAD": 0.525,
+      "GBM": 0.804,
+      "KIRC": 0.532,
+      "KIRP": 0.52,
+      "LGG": 0.615,
+      "LIHC": 0.424,
+      "LUSC": 0.539,
+      "OV": 0.775,
+      "PRAD": 0.467,
+      "THYM": 0.611
+    },
+    "mean": 0.599,
+    "min": 0.424,
+    "max": 0.804
+  },
+  "feature_dims_selected": {
+    "mRNA": 2000,
+    "miRNA": 1434,
+    "Methy": 2000,
+    "CNV": 2000
+  },
+  "n_patients": 3044,
+  "n_types": 11,
+  "num_clusters": 11,
+  "per_type_n": {
+    "ACC": 177,
+    "COAD": 291,
+    "GBM": 244,
+    "KIRC": 314,
+    "KIRP": 273,
+    "LGG": 247,
+    "LIHC": 364,
+    "LUSC": 363,
+    "OV": 284,
+    "PRAD": 368,
+    "THYM": 119
+  },
+  "survival_n": 2269,
+  "biomarkers_attention_top8": {
+    "mRNA": [
+      "SNORA77",
+      "LINC01886",
+      "ST7",
+      "43899",
+      "GIMAP6",
+      "NFATC2IP",
+      "MIR4645",
+      "H3F3B"
+    ],
+    "miRNA": [
+      "hsa-mir-4736",
+      "hsa-mir-141",
+      "hsa-mir-6826",
+      "hsa-mir-6882",
+      "hsa-mir-6881",
+      "hsa-mir-548n",
+      "hsa-mir-4435-1",
+      "hsa-mir-802"
+    ],
+    "Methy": [
+      "GATA6",
+      "SERPINB6",
+      "LAMB2",
+      "FAM227B",
+      "SH3KBP1",
+      "ZBED5",
+      "NOMO3",
+      "AC007906-1"
+    ],
+    "CNV": [
+      "MARC2",
+      "MARCH6",
+      "ZC3H11B",
+      "LGR6",
+      "RP4-576H24-4",
+      "SEPT1",
+      "AGRP",
+      "MARCH10"
+    ]
+  },
+  "biomarkers_consensus": {
+    "mRNA": [
+      "CLCA1",
+      "ENSG00000255639",
+      "LINC02027",
+      "SNORA77",
+      "SNORD51"
+    ],
+    "miRNA": [
+      "hsa-mir-372",
+      "hsa-mir-4695",
+      "hsa-mir-6729",
+      "hsa-mir-6881"
+    ],
+    "Methy": [
+      "NOMO3",
+      "VTI1B"
+    ],
+    "CNV": [
+      "CTD-2140B24-4",
+      "MARC2",
+      "MARCH6",
+      "SEPT1"
+    ]
+  },
+  "method_overlap": [
+    {
+      "modality": "mRNA",
+      "attn_n": 50,
+      "recon_n": 50,
+      "overlap": 5,
+      "jaccard": 0.053,
+      "overlap_pct_of_50": 10.0
+    },
+    {
+      "modality": "miRNA",
+      "attn_n": 50,
+      "recon_n": 50,
+      "overlap": 4,
+      "jaccard": 0.042,
+      "overlap_pct_of_50": 8.0
+    },
+    {
+      "modality": "Methy",
+      "attn_n": 50,
+      "recon_n": 50,
+      "overlap": 2,
+      "jaccard": 0.02,
+      "overlap_pct_of_50": 4.0
+    },
+    {
+      "modality": "CNV",
+      "attn_n": 50,
+      "recon_n": 50,
+      "overlap": 4,
+      "jaccard": 0.042,
+      "overlap_pct_of_50": 8.0
+    }
+  ],
+  "cv_corrected": {
+    "silhouette_per_fold": [
+      0.7844761610031128,
+      0.493423730134964,
+      0.4306703209877014,
+      0.5639801621437073,
+      0.3902083933353424
+    ],
+    "silhouette_mean": 0.5325517535209656,
+    "silhouette_std": 0.13901518812838298,
+    "AUTHORITATIVE_nmi_full_cohort": 0.38794483058861934,
+    "AUTHORITATIVE_ari_full_cohort": 0.12370056472272252,
+    "full_cohort_silhouette": 0.8267605900764465,
+    "best_fold": 0,
+    "best_fold_test_nmi_aligned": 0.3885525677986823,
+    "best_fold_test_ari_aligned": 0.12197708885409665,
+    "effective_clusters_used": 4,
+    "cluster_sizes": [
+      774,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2268,
+      0,
+      1
+    ],
+    "buggy_perfold_nmi_RETRACTED": {
+      "mean": 0.026445546139265096,
+      "std": 0.013595644898283289,
+      "values": [
+        0.008093626741767996,
+        0.041613771149446706,
+        0.017383565795446615,
+        0.04257443274784587,
+        0.0225623342618183
+      ]
+    },
+    "buggy_perfold_ari_RETRACTED": {
+      "mean": -0.0016277896955965072,
+      "std": 0.0009657357143626198,
+      "values": [
+        -0.0014446049109309485,
+        -0.0021142580710109696,
+        2.2208958155528048e-05,
+        -0.0029190885335838718,
+        -0.001683205920612275
+      ]
+    },
+    "note": "Per-fold NMI/ARI in cv_metrics.json are INVALID (shuffled eval loader misaligned labels/predictions \u2014 the manuscript's NMI\u22480.03 artifact). Silhouette is order-invariant and valid. Authoritative NMI/ARI are from the aligned full-cohort best-fold clusters. NOTE: the DEC head collapsed to 4 effective clusters (of 11), which is why silhouette is high \u2014 temper claims of many distinct subtypes."
+  },
+  "cluster_validity": {
+    "overall_purity": 0.21484888304862024,
+    "cramers_v": 0.5790246656287855,
+    "chi_p": 0.0,
+    "nmi": 0.38794483058861934,
+    "ari": 0.12370056472272252,
+    "n_sig_enrichments_fdr05": 11,
+    "technical_source": {
+      "variable": "dataset_source(clustering|classification)",
+      "cramers_v": 0.7967900034959384,
+      "chi_p": 0.0
+    }
+  },
+  "baselines": [
+    {
+      "method": "HiOmicsFormer",
+      "n_folds": 5,
+      "silhouette_mean": 0.533,
+      "silhouette_std": 0.139,
+      "nmi_mean": 0.388,
+      "nmi_std": 0.0,
+      "ari_mean": 0.124,
+      "ari_std": 0.0,
+      "note": "NMI/ARI = aligned full-cohort (see cv_metrics_corrected.json)"
+    },
+    {
+      "method": "Methy Only",
+      "n_folds": 5,
+      "silhouette_mean": 0.202,
+      "silhouette_std": 0.003,
+      "nmi_mean": 0.322,
+      "nmi_std": 0.006,
+      "ari_mean": 0.216,
+      "ari_std": 0.007,
+      "note": NaN
+    },
+    {
+      "method": "MOFA+",
+      "n_folds": 5,
+      "silhouette_mean": 0.152,
+      "silhouette_std": 0.003,
+      "nmi_mean": 0.257,
+      "nmi_std": 0.017,
+      "ari_mean": 0.155,
+      "ari_std": 0.01,
+      "note": NaN
+    },
+    {
+      "method": "CNV Only",
+      "n_folds": 5,
+      "silhouette_mean": 0.08,
+      "silhouette_std": 0.005,
+      "nmi_mean": 0.234,
+      "nmi_std": 0.008,
+      "ari_mean": 0.119,
+      "ari_std": 0.007,
+      "note": NaN
+    },
+    {
+      "method": "SimpleMultiOmicsTransformer",
+      "n_folds": 5,
+      "silhouette_mean": 0.059,
+      "silhouette_std": 0.009,
+      "nmi_mean": 0.351,
+      "nmi_std": 0.011,
+      "ari_mean": 0.198,
+      "ari_std": 0.02,
+      "note": NaN
+    },
+    {
+      "method": "mRNA Only",
+      "n_folds": 5,
+      "silhouette_mean": 0.052,
+      "silhouette_std": 0.008,
+      "nmi_mean": 0.227,
+      "nmi_std": 0.019,
+      "ari_mean": 0.087,
+      "ari_std": 0.017,
+      "note": NaN
+    },
+    {
+      "method": "miRNA Only",
+      "n_folds": 5,
+      "silhouette_mean": 0.017,
+      "silhouette_std": 0.009,
+      "nmi_mean": 0.155,
+      "nmi_std": 0.011,
+      "ari_mean": 0.053,
+      "ari_std": 0.01,
+      "note": NaN
+    },
+    {
+      "method": "Concat + KMeans",
+      "n_folds": 5,
+      "silhouette_mean": 0.009,
+      "silhouette_std": 0.014,
+      "nmi_mean": 0.293,
+      "nmi_std": 0.016,
+      "ari_mean": 0.197,
+      "ari_std": 0.011,
+      "note": NaN
+    },
+    {
+      "method": "Hierarchical",
+      "n_folds": 5,
+      "silhouette_mean": 0.005,
+      "silhouette_std": 0.006,
+      "nmi_mean": 0.329,
+      "nmi_std": 0.01,
+      "ari_mean": 0.208,
+      "ari_std": 0.008,
+      "note": NaN
+    },
+    {
+      "method": "SNF",
+      "n_folds": 5,
+      "silhouette_mean": -0.042,
+      "silhouette_std": 0.013,
+      "nmi_mean": 0.372,
+      "nmi_std": 0.021,
+      "ari_mean": 0.166,
+      "ari_std": 0.019,
+      "note": NaN
+    },
+    {
+      "method": "MOGONET",
+      "n_folds": 5,
+      "silhouette_mean": -0.073,
+      "silhouette_std": 0.005,
+      "nmi_mean": 0.408,
+      "nmi_std": 0.017,
+      "ari_mean": 0.269,
+      "ari_std": 0.012,
+      "note": NaN
+    },
+    {
+      "method": "Spectral",
+      "n_folds": 5,
+      "silhouette_mean": -0.097,
+      "silhouette_std": 0.007,
+      "nmi_mean": 0.329,
+      "nmi_std": 0.017,
+      "ari_mean": 0.093,
+      "ari_std": 0.016,
+      "note": NaN
+    }
+  ],
+  "imputation": [
+    {
+      "modality": "mRNA",
+      "pair": "Mean vs k-NN",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.17,
+      "eff_missing": 0.151
+    },
+    {
+      "modality": "mRNA",
+      "pair": "Mean vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.17,
+      "eff_missing": 0.151
+    },
+    {
+      "modality": "mRNA",
+      "pair": "k-NN vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.17,
+      "eff_missing": 0.151
+    },
+    {
+      "modality": "miRNA",
+      "pair": "Mean vs k-NN",
+      "jaccard": 1.0,
+      "null_jaccard": 0.021,
+      "raw_missing": 0.605,
+      "eff_missing": 0.552
+    },
+    {
+      "modality": "miRNA",
+      "pair": "Mean vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.021,
+      "raw_missing": 0.605,
+      "eff_missing": 0.552
+    },
+    {
+      "modality": "miRNA",
+      "pair": "k-NN vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.021,
+      "raw_missing": 0.605,
+      "eff_missing": 0.552
+    },
+    {
+      "modality": "Methy",
+      "pair": "Mean vs k-NN",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.008,
+      "eff_missing": 0.007
+    },
+    {
+      "modality": "Methy",
+      "pair": "Mean vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.008,
+      "eff_missing": 0.007
+    },
+    {
+      "modality": "Methy",
+      "pair": "k-NN vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.008,
+      "eff_missing": 0.007
+    },
+    {
+      "modality": "CNV",
+      "pair": "Mean vs k-NN",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.002,
+      "eff_missing": 0.003
+    },
+    {
+      "modality": "CNV",
+      "pair": "Mean vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.002,
+      "eff_missing": 0.003
+    },
+    {
+      "modality": "CNV",
+      "pair": "k-NN vs MICE",
+      "jaccard": 1.0,
+      "null_jaccard": 0.013,
+      "raw_missing": 0.002,
+      "eff_missing": 0.003
+    }
+  ],
+  "imputation_permod": {
+    "mRNA": {
+      "raw_missing": 0.17041376933129657,
+      "eff_missing": 0.15107042136394327,
+      "null_jaccard": 0.012716174974567653,
+      "skipped": 0.0
+    },
+    "miRNA": {
+      "raw_missing": 0.6046274812741804,
+      "eff_missing": 0.5517376859819423,
+      "null_jaccard": 0.0205761316872428,
+      "skipped": 0.0
+    },
+    "Methy": {
+      "raw_missing": 0.007758168265691498,
+      "eff_missing": 0.006885840998685939,
+      "null_jaccard": 0.012658227848101266,
+      "skipped": 0.0
+    },
+    "CNV": {
+      "raw_missing": 0.0019716942192405406,
+      "eff_missing": 0.002818659658344284,
+      "null_jaccard": 0.012658227848101266,
+      "skipped": 0.0
+    }
+  },
+  "imputation_rigor": {
+    "mRNA": {
+      "top50_missingness_median": 0.0,
+      "top50_missingness_max": 0.0,
+      "overall_selected_missingness_median": 0.0,
+      "mad_rank50_value": 0.694909930229187,
+      "mad_rank51_value": 0.6948861479759216,
+      "mad_boundary_gap": 2.378225326538086e-05,
+      "n_zero_mad_features": 285,
+      "degenerate_all_equal": false
+    },
+    "miRNA": {
+      "top50_missingness_median": 0.0,
+      "top50_missingness_max": 0.0,
+      "overall_selected_missingness_median": 0.6934954007884363,
+      "mad_rank50_value": 0.6405574083328247,
+      "mad_rank51_value": 0.6402411460876465,
+      "mad_boundary_gap": 0.00031626224517822266,
+      "n_zero_mad_features": 841,
+      "degenerate_all_equal": false
+    },
+    "Methy": {
+      "top50_missingness_median": 0.0,
+      "top50_missingness_max": 0.00985545335085414,
+      "overall_selected_missingness_median": 0.0,
+      "mad_rank50_value": 0.7857994437217712,
+      "mad_rank51_value": 0.7855221033096313,
+      "mad_boundary_gap": 0.0002773404121398926,
+      "n_zero_mad_features": 1,
+      "degenerate_all_equal": false
+    },
+    "CNV": {
+      "top50_missingness_median": 0.0,
+      "top50_missingness_max": 0.0,
+      "overall_selected_missingness_median": 0.0,
+      "mad_rank50_value": 0.5185831785202026,
+      "mad_rank51_value": 0.5179487466812134,
+      "mad_boundary_gap": 0.0006344318389892578,
+      "n_zero_mad_features": 0,
+      "degenerate_all_equal": false
+    }
+  },
+  "stratified_survival": [
+    {
+      "cancer_type": "ACC",
+      "n": 177,
+      "logrank_p": NaN,
+      "note": "subtype too small",
+      "n_sub0": NaN,
+      "n_sub1": NaN,
+      "logrank_fdr": NaN
+    },
+    {
+      "cancer_type": "COAD",
+      "n": 291,
+      "logrank_p": 0.1439,
+      "note": "ok",
+      "n_sub0": 59.0,
+      "n_sub1": 232.0,
+      "logrank_fdr": 0.3093
+    },
+    {
+      "cancer_type": "GBM",
+      "n": 0,
+      "logrank_p": NaN,
+      "note": "too few survival samples",
+      "n_sub0": NaN,
+      "n_sub1": NaN,
+      "logrank_fdr": NaN
+    },
+    {
+      "cancer_type": "KIRC",
+      "n": 314,
+      "logrank_p": 0.0645,
+      "note": "ok",
+      "n_sub0": 245.0,
+      "n_sub1": 69.0,
+      "logrank_fdr": 0.3093
+    },
+    {
+      "cancer_type": "KIRP",
+      "n": 272,
+      "logrank_p": 0.1767,
+      "note": "ok",
+      "n_sub0": 60.0,
+      "n_sub1": 212.0,
+      "logrank_fdr": 0.3093
+    },
+    {
+      "cancer_type": "LGG",
+      "n": 0,
+      "logrank_p": NaN,
+      "note": "too few survival samples",
+      "n_sub0": NaN,
+      "n_sub1": NaN,
+      "logrank_fdr": NaN
+    },
+    {
+      "cancer_type": "LIHC",
+      "n": 364,
+      "logrank_p": 0.8731,
+      "note": "ok",
+      "n_sub0": 256.0,
+      "n_sub1": 108.0,
+      "logrank_fdr": 0.9368
+    },
+    {
+      "cancer_type": "LUSC",
+      "n": 357,
+      "logrank_p": 0.7341,
+      "note": "ok",
+      "n_sub0": 293.0,
+      "n_sub1": 64.0,
+      "logrank_fdr": 0.9368
+    },
+    {
+      "cancer_type": "OV",
+      "n": 0,
+      "logrank_p": NaN,
+      "note": "too few survival samples",
+      "n_sub0": NaN,
+      "n_sub1": NaN,
+      "logrank_fdr": NaN
+    },
+    {
+      "cancer_type": "PRAD",
+      "n": 368,
+      "logrank_p": 0.1419,
+      "note": "ok",
+      "n_sub0": 247.0,
+      "n_sub1": 121.0,
+      "logrank_fdr": 0.3093
+    },
+    {
+      "cancer_type": "THYM",
+      "n": 118,
+      "logrank_p": 0.9368,
+      "note": "ok",
+      "n_sub0": 14.0,
+      "n_sub1": 104.0,
+      "logrank_fdr": 0.9368
+    }
+  ],
+  "dedup": {
+    "detected_duplicates": [
+      [
+        "COAD",
+        "THCA",
+        260,
+        1.0
+      ]
+    ],
+    "relabel_map": {
+      "THCA": "COAD"
+    },
+    "n_before": 3304,
+    "n_after": 3044,
+    "n_dropped": 260,
+    "types_after": [
+      "ACC",
+      "COAD",
+      "GBM",
+      "KIRC",
+      "KIRP",
+      "LGG",
+      "LIHC",
+      "LUSC",
+      "OV",
+      "PRAD",
+      "THYM"
+    ]
+  },
+  "cleaning_total_dropped": 31659,
+  "selected_feature_audit": {
+    "mRNA": {
+      "selected": 2000,
+      "residual_padding": 0,
+      "residual_dotted": 0,
+      "not_in_clean_universe": 0,
+      "examples": [
+        "COQ7",
+        "CD151",
+        "FAM83D",
+        "LOC100129518",
+        "GCHFR",
+        "RAB40C",
+        "MPHOSPH6",
+        "3-Mar",
+        "DHX33",
+        "DM1-AS"
+      ]
+    },
+    "miRNA": {
+      "selected": 1434,
+      "residual_padding": 0,
+      "residual_dotted": 0,
+      "not_in_clean_universe": 0,
+      "examples": [
+        "hsa-mir-670",
+        "hsa-mir-3660",
+        "hsa-mir-4771-1",
+        "hsa-mir-4771-2",
+        "hsa-mir-4779",
+        "hsa-mir-320e",
+        "hsa-mir-4789",
+        "hsa-mir-4794",
+        "hsa-mir-3202-1",
+        "hsa-mir-6881"
+      ]
+    },
+    "Methy": {
+      "selected": 2000,
+      "residual_padding": 0,
+      "residual_dotted": 0,
+      "not_in_clean_universe": 0,
+      "examples": [
+        "ABCC5",
+        "AMZ2",
+        "FANCC",
+        "NR2F2",
+        "ADCY10",
+        "LBX2",
+        "PTTG1",
+        "LRRC61",
+        "ADH5",
+        "GK"
+      ]
+    },
+    "CNV": {
+      "selected": 2000,
+      "residual_padding": 0,
+      "residual_dotted": 0,
+      "not_in_clean_universe": 0,
+      "examples": [
+        "NIPAL3",
+        "PGAM2",
+        "CABLES2",
+        "ZNF668",
+        "SEPT11",
+        "ANGPT1",
+        "KDM1A",
+        "ZNF680",
+        "CHMP1A",
+        "LYRM1"
+      ]
+    }
+  },
+  "determinism": {
+    "silhouette_run1": 0.4957653284072876,
+    "silhouette_run2": 0.4957653284072876,
+    "silhouette_identical": true,
+    "embeddings_maxdiff": 9.5367431640625e-07,
+    "embeddings_close_atol_1e-4": true,
+    "device": "mps",
+    "note": "Identical seeds -> identical silhouette confirms determinism. On MPS, tiny (<1e-4) float differences may remain from nondeterministic GPU reductions; silhouette equality is the operative check."
+  },
+  "external": "NOT RUN \u2014 external cohort not in repo",
+  "embedding_extras": {
+    "pc1_variance_pct": 99.7,
+    "pc1_5": [
+      99.7,
+      0.2,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "per_sample_silhouette_mean": 0.827,
+    "frac_positive_silhouette": 0.99
+  }
+}

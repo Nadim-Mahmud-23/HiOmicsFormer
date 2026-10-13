@@ -1,0 +1,74 @@
+{
+  "mRNA": {
+    "selected": 2000,
+    "residual_padding": 0,
+    "residual_dotted": 0,
+    "not_in_clean_universe": 0,
+    "examples": [
+      "COQ7",
+      "CD151",
+      "FAM83D",
+      "LOC100129518",
+      "GCHFR",
+      "RAB40C",
+      "MPHOSPH6",
+      "3-Mar",
+      "DHX33",
+      "DM1-AS"
+    ]
+  },
+  "miRNA": {
+    "selected": 1434,
+    "residual_padding": 0,
+    "residual_dotted": 0,
+    "not_in_clean_universe": 0,
+    "examples": [
+      "hsa-mir-670",
+      "hsa-mir-3660",
+      "hsa-mir-4771-1",
+      "hsa-mir-4771-2",
+      "hsa-mir-4779",
+      "hsa-mir-320e",
+      "hsa-mir-4789",
+      "hsa-mir-4794",
+      "hsa-mir-3202-1",
+      "hsa-mir-6881"
+    ]
+  },
+  "Methy": {
+    "selected": 2000,
+    "residual_padding": 0,
+    "residual_dotted": 0,
+    "not_in_clean_universe": 0,
+    "examples": [
+      "ABCC5",
+      "AMZ2",
+      "FANCC",
+      "NR2F2",
+      "ADCY10",
+      "LBX2",
+      "PTTG1",
+      "LRRC61",
+      "ADH5",
+      "GK"
+    ]
+  },
+  "CNV": {
+    "selected": 2000,
+    "residual_padding": 0,
+    "residual_dotted": 0,
+    "not_in_clean_universe": 0,
+    "examples": [
+      "NIPAL3",
+      "PGAM2",
+      "CABLES2",
+      "ZNF668",
+      "SEPT11",
+      "ANGPT1",
+      "KDM1A",
+      "ZNF680",
+      "CHMP1A",
+      "LYRM1"
+    ]
+  }
+}

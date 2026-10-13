@@ -1,0 +1,5 @@
+modality,attn_n,recon_n,overlap,jaccard,overlap_pct_of_50
+mRNA,50,50,5,0.053,10.0
+miRNA,50,50,4,0.042,8.0
+Methy,50,50,2,0.02,4.0
+CNV,50,50,4,0.042,8.0

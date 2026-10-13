@@ -1,0 +1,8 @@
+{
+  "purity": 0.21484888304862024,
+  "nmi": 0.38794483058861934,
+  "ari": 0.12370056472272252,
+  "cramers_v_vs_cancer_type": 0.5790246656287855,
+  "cramers_v_vs_batch": 1.0,
+  "n_sig_type_enrichments_fdr05": 11
+}

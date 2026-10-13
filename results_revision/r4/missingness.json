@@ -1,0 +1,213 @@
+{
+  "all": {
+    "n_patients": 3044,
+    "universe": {
+      "mRNA": {
+        "n_features": 21886,
+        "missing_fraction": 0.17041376933129657
+      },
+      "miRNA": {
+        "n_features": 1434,
+        "missing_fraction": 0.6046274812741804
+      },
+      "Methy": {
+        "n_features": 19087,
+        "missing_fraction": 0.007758168265691498
+      },
+      "CNV": {
+        "n_features": 19595,
+        "missing_fraction": 0.0019716942192405406
+      }
+    },
+    "selected_panel": {
+      "mRNA": {
+        "n_features": 2000,
+        "missing_fraction": 0.1545169185282523,
+        "frac_patients_with_any_missing": 1.0,
+        "missing_fraction_clustering_archive": 0.1596460996033495,
+        "missing_fraction_classification_archive": 0.1395
+      },
+      "miRNA": {
+        "n_features": 1434,
+        "missing_fraction": 0.6046274812741804,
+        "frac_patients_with_any_missing": 1.0,
+        "missing_fraction_clustering_archive": 0.5589041062209527,
+        "missing_fraction_classification_archive": 0.7384937238493724
+      },
+      "Methy": {
+        "n_features": 2000,
+        "missing_fraction": 0.006885840998685939,
+        "frac_patients_with_any_missing": 1.0,
+        "missing_fraction_clustering_archive": 0.006198325253415601,
+        "missing_fraction_classification_archive": 0.008898709677419354
+      },
+      "CNV": {
+        "n_features": 2000,
+        "missing_fraction": 0.002818659658344284,
+        "frac_patients_with_any_missing": 0.4336399474375821,
+        "missing_fraction_clustering_archive": 0.0015612604671661524,
+        "missing_fraction_classification_archive": 0.0065
+      }
+    },
+    "pc_vs_missingness_spearman": {
+      "PC1": {
+        "mRNA": 0.279505113062967,
+        "miRNA": -0.44027467553127075,
+        "Methy": 0.015071941144729378,
+        "CNV": -0.5326235068671245,
+        "all_selected": -0.6095069128778134
+      },
+      "PC2": {
+        "mRNA": -0.1405582831240432,
+        "miRNA": 0.059938581886862165,
+        "Methy": -0.16843988291986742,
+        "CNV": -0.03651238957350097,
+        "all_selected": -0.03071017867221288
+      },
+      "PC3": {
+        "mRNA": -0.061398820760600305,
+        "miRNA": 0.09649399458621817,
+        "Methy": -0.04688319551017013,
+        "CNV": 0.01168535272225233,
+        "all_selected": 0.0786808528192286
+      }
+    },
+    "missingness_auc_for_archive": {
+      "mRNA": 0.37946231820185106,
+      "miRNA": 0.7974878801234024,
+      "Methy": 0.6034373533885895,
+      "CNV": 0.879903040987219,
+      "all_selected": 1.0
+    },
+    "pc1_auc_for_archive": 1.0,
+    "smallest_substantive_cluster": {
+      "cluster_id": 0,
+      "n": 774,
+      "composition": {
+        "OV": 284,
+        "LGG": 247,
+        "GBM": 243
+      },
+      "missing_fraction_in_cluster": {
+        "mRNA": 0.13949999999999999,
+        "miRNA": 0.7384937238493723,
+        "Methy": 0.008901162790697675,
+        "CNV": 0.006500000000000001,
+        "all_selected": 0.18412729695741123
+      },
+      "missing_fraction_rest": {
+        "mRNA": 0.1596372246696035,
+        "miRNA": 0.5589832205899521,
+        "Methy": 0.006198678414096916,
+        "CNV": 0.0015634361233480174,
+        "all_selected": 0.15286260650256764
+      },
+      "mannwhitney_p": {
+        "mRNA": 4.228268856328383e-25,
+        "miRNA": 3.3601740679073975e-142,
+        "Methy": 1.2028550679143345e-18,
+        "CNV": 1.1850029833447938e-296,
+        "all_selected": 0.0
+      }
+    }
+  },
+  "single_archive": {
+    "n_patients": 2269,
+    "universe": {
+      "mRNA": {
+        "n_features": 21886,
+        "missing_fraction": 0.17115781295012938
+      },
+      "miRNA": {
+        "n_features": 1434,
+        "missing_fraction": 0.5589041062209527
+      },
+      "Methy": {
+        "n_features": 19087,
+        "missing_fraction": 0.009070364474072156
+      },
+      "CNV": {
+        "n_features": 19595,
+        "missing_fraction": 0.0021222168479807777
+      }
+    },
+    "selected_panel": {
+      "mRNA": {
+        "n_features": 2000,
+        "missing_fraction": 0.14444513001322168,
+        "frac_patients_with_any_missing": 1.0
+      },
+      "miRNA": {
+        "n_features": 1434,
+        "missing_fraction": 0.5589041062209527,
+        "frac_patients_with_any_missing": 1.0
+      },
+      "Methy": {
+        "n_features": 2000,
+        "missing_fraction": 0.008661304539444688,
+        "frac_patients_with_any_missing": 1.0
+      },
+      "CNV": {
+        "n_features": 2000,
+        "missing_fraction": 0.0027794182459233143,
+        "frac_patients_with_any_missing": 1.0
+      }
+    },
+    "pc_vs_missingness_spearman": {
+      "PC1": {
+        "mRNA": -0.009055368799004152,
+        "miRNA": 0.019971269908391057,
+        "Methy": -0.015291376950236794,
+        "CNV": -0.018059313623492983,
+        "all_selected": 0.027385996415173953
+      },
+      "PC2": {
+        "mRNA": 0.005949510689975035,
+        "miRNA": -0.0011422976152592982,
+        "Methy": 0.0003178133445346063,
+        "CNV": 0.025022528827527736,
+        "all_selected": 0.010539578767338036
+      },
+      "PC3": {
+        "mRNA": 0.0153730695199173,
+        "miRNA": -0.029649485220158346,
+        "Methy": 0.03294415931529367,
+        "CNV": 0.00519287955840366,
+        "all_selected": -0.001007848937623236
+      }
+    },
+    "smallest_substantive_cluster": {
+      "cluster_id": 2,
+      "n": 82,
+      "composition": {
+        "LIHC": 22,
+        "PRAD": 19,
+        "LUSC": 18,
+        "COAD": 17,
+        "THYM": 4,
+        "ACC": 2
+      },
+      "missing_fraction_in_cluster": {
+        "mRNA": 0.14029878048780492,
+        "miRNA": 0.5536959553695957,
+        "Methy": 0.007390243902439024,
+        "CNV": 0.002731707317073171,
+        "all_selected": 0.14727488073912212
+      },
+      "missing_fraction_rest": {
+        "mRNA": 0.14460059442158207,
+        "miRNA": 0.5590993821102126,
+        "Methy": 0.008708962048468221,
+        "CNV": 0.002781207133058985,
+        "all_selected": 0.149842620547789
+      },
+      "mannwhitney_p": {
+        "mRNA": 0.17421964427695125,
+        "miRNA": 0.27040744670501005,
+        "Methy": 0.15903698126672816,
+        "CNV": 0.7314633319538184,
+        "all_selected": 0.4366465974778444
+      }
+    }
+  }
+}

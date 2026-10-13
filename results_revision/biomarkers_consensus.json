@@ -1,0 +1,25 @@
+{
+  "mRNA": [
+    "CLCA1",
+    "ENSG00000255639",
+    "LINC02027",
+    "SNORA77",
+    "SNORD51"
+  ],
+  "miRNA": [
+    "hsa-mir-372",
+    "hsa-mir-4695",
+    "hsa-mir-6729",
+    "hsa-mir-6881"
+  ],
+  "Methy": [
+    "NOMO3",
+    "VTI1B"
+  ],
+  "CNV": [
+    "CTD-2140B24-4",
+    "MARC2",
+    "MARCH6",
+    "SEPT1"
+  ]
+}

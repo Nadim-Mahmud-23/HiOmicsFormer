@@ -1,0 +1,247 @@
+{
+  "reference": {
+    "modality_dims": {
+      "mRNA": 2000,
+      "miRNA": 1434,
+      "Methy": 2000,
+      "CNV": 2000
+    },
+    "input_level": {
+      "kmeans_nmi_type": 0.2634213642818545,
+      "kmeans_ari_type": 0.20724773721862857,
+      "input_pc1_auc_archive": 0.9034282545956013,
+      "kmeans_uncertainty_archive": 0.6980038926348052,
+      "kmeans_uncertainty_type": 0.26022201641559195
+    },
+    "test_fold": {
+      "silhouette": 0.7844761610031128,
+      "nmi": 0.3885525677986823,
+      "ari": 0.12197708885409665
+    },
+    "pc1_variance_pct": 99.66846466064453,
+    "cluster_sizes": [
+      2268,
+      774,
+      1,
+      1
+    ],
+    "full_cohort_nmi_type": 0.38794483058861934,
+    "full_cohort_ari_type": 0.12370056472272252,
+    "association_type": {
+      "cramers_v": 0.5790246656287855,
+      "cramers_v_clusters_ge10": 0.9999999999999999,
+      "mutual_information_nats": 0.5683870286546244,
+      "uncertainty_coefficient": 0.2410938636068343,
+      "n_levels": 11
+    },
+    "minutes": 26.3,
+    "pc1_auc_archive": 1.0,
+    "association_archive": {
+      "cramers_v": 1.0,
+      "cramers_v_clusters_ge10": 0.9999999999999999,
+      "mutual_information_nats": 0.5673317157902809,
+      "uncertainty_coefficient": 1.0000000000000007,
+      "n_levels": 2
+    }
+  },
+  "per_type_standardized": {
+    "modality_dims": {
+      "mRNA": 2000,
+      "miRNA": 1434,
+      "Methy": 2000,
+      "CNV": 2000
+    },
+    "input_level": {
+      "kmeans_nmi_type": 0.17823718947288,
+      "kmeans_ari_type": 0.08382682306928498,
+      "input_pc1_auc_archive": 0.5206477203258505,
+      "kmeans_uncertainty_archive": 0.5051678097906792,
+      "kmeans_uncertainty_type": 0.17185789131714863
+    },
+    "test_fold": {
+      "silhouette": 0.10088995099067688,
+      "nmi": 0.14421809869145116,
+      "ari": 0.044866960014828615
+    },
+    "pc1_variance_pct": 78.18826293945312,
+    "cluster_sizes": [
+      750,
+      622,
+      371,
+      349,
+      333,
+      220,
+      165,
+      131,
+      45,
+      29,
+      29
+    ],
+    "full_cohort_nmi_type": 0.14244183309694142,
+    "full_cohort_ari_type": 0.06203370795930078,
+    "association_type": {
+      "cramers_v": 0.2471029007667959,
+      "cramers_v_clusters_ge10": 0.2471029007667959,
+      "mutual_information_nats": 0.3139644260766058,
+      "uncertainty_coefficient": 0.13317491902846815,
+      "n_levels": 11
+    },
+    "minutes": 30.2,
+    "pc1_auc_archive": 0.5909222479705426,
+    "association_archive": {
+      "cramers_v": 0.6921876387500632,
+      "cramers_v_clusters_ge10": 0.6921876387500632,
+      "mutual_information_nats": 0.2621970295409837,
+      "uncertainty_coefficient": 0.46215824401029476,
+      "n_levels": 2
+    }
+  },
+  "no_miRNA": {
+    "modality_dims": {
+      "mRNA": 2000,
+      "Methy": 2000,
+      "CNV": 2000
+    },
+    "input_level": {
+      "kmeans_nmi_type": 0.29146081014169384,
+      "kmeans_ari_type": 0.22034569254897798,
+      "input_pc1_auc_archive": 0.8972132103100697,
+      "kmeans_uncertainty_archive": 0.8319514650331952,
+      "kmeans_uncertainty_type": 0.2892436026099612
+    },
+    "test_fold": {
+      "silhouette": 0.41075658798217773,
+      "nmi": 0.3723868884610184,
+      "ari": 0.20910518952405163
+    },
+    "pc1_variance_pct": 95.5318603515625,
+    "cluster_sizes": [
+      542,
+      527,
+      504,
+      454,
+      365,
+      271,
+      221,
+      99,
+      26,
+      24,
+      11
+    ],
+    "full_cohort_nmi_type": 0.35527303184021014,
+    "full_cohort_ari_type": 0.21325229230920484,
+    "association_type": {
+      "cramers_v": 0.4625235133675025,
+      "cramers_v_clusters_ge10": 0.4625235133675025,
+      "mutual_information_nats": 0.7852704889297166,
+      "uncertainty_coefficient": 0.3330897550576128,
+      "n_levels": 11
+    },
+    "minutes": 36.3,
+    "pc1_auc_archive": 0.9999977253017529,
+    "association_archive": {
+      "cramers_v": 0.9953731752704258,
+      "cramers_v_clusters_ge10": 0.9953731752704258,
+      "mutual_information_nats": 0.5623132072360514,
+      "uncertainty_coefficient": 0.9911541900187292,
+      "n_levels": 2
+    }
+  },
+  "mean_imputation": {
+    "modality_dims": {
+      "mRNA": 2000,
+      "miRNA": 1434,
+      "Methy": 2000,
+      "CNV": 2000
+    },
+    "input_level": {
+      "kmeans_nmi_type": 0.28852771753976697,
+      "kmeans_ari_type": 0.22129115516224826,
+      "input_pc1_auc_archive": 0.8912199491036267,
+      "kmeans_uncertainty_archive": 0.8015218953192804,
+      "kmeans_uncertainty_type": 0.2865563570386015
+    },
+    "test_fold": {
+      "silhouette": 0.4537619650363922,
+      "nmi": 0.3791627987491036,
+      "ari": 0.12273782973664663
+    },
+    "pc1_variance_pct": 94.59065246582031,
+    "cluster_sizes": [
+      2089,
+      736,
+      72,
+      67,
+      32,
+      27,
+      9,
+      8,
+      4
+    ],
+    "full_cohort_nmi_type": 0.3594398750522324,
+    "full_cohort_ari_type": 0.12252718429223745,
+    "association_type": {
+      "cramers_v": 0.3659435036814835,
+      "cramers_v_clusters_ge10": 0.4607675864870348,
+      "mutual_information_nats": 0.5864404864603032,
+      "uncertainty_coefficient": 0.24875163493940083,
+      "n_levels": 11
+    },
+    "minutes": 17.9,
+    "pc1_auc_archive": 1.0,
+    "association_archive": {
+      "cramers_v": 0.9857923433379797,
+      "cramers_v_clusters_ge10": 0.9857583081315888,
+      "mutual_information_nats": 0.5523731826052509,
+      "uncertainty_coefficient": 0.9736335326076514,
+      "n_levels": 2
+    }
+  },
+  "complete_features": {
+    "modality_dims": {
+      "mRNA": 2000,
+      "miRNA": 314,
+      "Methy": 2000,
+      "CNV": 2000
+    },
+    "input_level": {
+      "kmeans_nmi_type": 0.2941676015591815,
+      "kmeans_ari_type": 0.22032728305298666,
+      "input_pc1_auc_archive": 0.8959388106171541,
+      "kmeans_uncertainty_archive": 0.8399409630612359,
+      "kmeans_uncertainty_type": 0.2913306761278626
+    },
+    "test_fold": {
+      "silhouette": 0.4798498749732971,
+      "nmi": 0.3495485621077729,
+      "ari": 0.0964254017147195
+    },
+    "pc1_variance_pct": 86.4571304321289,
+    "cluster_sizes": [
+      2195,
+      344,
+      306,
+      169,
+      29,
+      1
+    ],
+    "full_cohort_nmi_type": 0.33514316202844385,
+    "full_cohort_ari_type": 0.10061986423448438,
+    "association_type": {
+      "cramers_v": 0.47170863730969365,
+      "cramers_v_clusters_ge10": 0.5254926778120442,
+      "mutual_information_nats": 0.5493222909332767,
+      "uncertainty_coefficient": 0.23300713564829806,
+      "n_levels": 11
+    },
+    "minutes": 9.3,
+    "pc1_auc_archive": 1.0,
+    "association_archive": {
+      "cramers_v": 0.9540137654349394,
+      "cramers_v_clusters_ge10": 0.9540084787182231,
+      "mutual_information_nats": 0.5110162295269213,
+      "uncertainty_coefficient": 0.9007362276848686,
+      "n_levels": 2
+    }
+  }
+}

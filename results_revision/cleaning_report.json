@@ -1,0 +1,80 @@
+{
+  "total_dropped": 31659,
+  "per_file": {
+    "LUAD/miRNA": {
+      "before": 450,
+      "after": 0,
+      "dropped": 450
+    },
+    "BRCA/mRNA": {
+      "before": 18206,
+      "after": 18205,
+      "dropped": 1
+    },
+    "BRCA/miRNA": {
+      "before": 671,
+      "after": 0,
+      "dropped": 671
+    },
+    "GBM/mRNA": {
+      "before": 20682,
+      "after": 18204,
+      "dropped": 2478
+    },
+    "GBM/miRNA": {
+      "before": 604,
+      "after": 375,
+      "dropped": 229
+    },
+    "GBM/Methy": {
+      "before": 24979,
+      "after": 19046,
+      "dropped": 5933
+    },
+    "GBM/CNV": {
+      "before": 21104,
+      "after": 19565,
+      "dropped": 1539
+    },
+    "LGG/mRNA": {
+      "before": 20682,
+      "after": 18204,
+      "dropped": 2478
+    },
+    "LGG/miRNA": {
+      "before": 604,
+      "after": 375,
+      "dropped": 229
+    },
+    "LGG/Methy": {
+      "before": 24979,
+      "after": 19046,
+      "dropped": 5933
+    },
+    "LGG/CNV": {
+      "before": 21104,
+      "after": 19565,
+      "dropped": 1539
+    },
+    "OV/mRNA": {
+      "before": 20682,
+      "after": 18204,
+      "dropped": 2478
+    },
+    "OV/miRNA": {
+      "before": 604,
+      "after": 375,
+      "dropped": 229
+    },
+    "OV/Methy": {
+      "before": 24979,
+      "after": 19046,
+      "dropped": 5933
+    },
+    "OV/CNV": {
+      "before": 21104,
+      "after": 19565,
+      "dropped": 1539
+    }
+  }
+}

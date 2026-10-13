@@ -1,0 +1,53 @@
+{
+  "silhouette_per_fold": [
+    0.7844761610031128,
+    0.493423730134964,
+    0.4306703209877014,
+    0.5639801621437073,
+    0.3902083933353424
+  ],
+  "silhouette_mean": 0.5325517535209656,
+  "silhouette_std": 0.13901518812838298,
+  "AUTHORITATIVE_nmi_full_cohort": 0.38794483058861934,
+  "AUTHORITATIVE_ari_full_cohort": 0.12370056472272252,
+  "full_cohort_silhouette": 0.8267605900764465,
+  "best_fold": 0,
+  "best_fold_test_nmi_aligned": 0.3885525677986823,
+  "best_fold_test_ari_aligned": 0.12197708885409665,
+  "effective_clusters_used": 4,
+  "cluster_sizes": [
+    774,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2268,
+    0,
+    1
+  ],
+  "buggy_perfold_nmi_RETRACTED": {
+    "mean": 0.026445546139265096,
+    "std": 0.013595644898283289,
+    "values": [
+      0.008093626741767996,
+      0.041613771149446706,
+      0.017383565795446615,
+      0.04257443274784587,
+      0.0225623342618183
+    ]
+  },
+  "buggy_perfold_ari_RETRACTED": {
+    "mean": -0.0016277896955965072,
+    "std": 0.0009657357143626198,
+    "values": [
+      -0.0014446049109309485,
+      -0.0021142580710109696,
+      2.2208958155528048e-05,
+      -0.0029190885335838718,
+      -0.001683205920612275
+    ]
+  },
+  "note": "Per-fold NMI/ARI in cv_metrics.json are INVALID (shuffled eval loader misaligned labels/predictions \u2014 the manuscript's NMI\u22480.03 artifact). Silhouette is order-invariant and valid. Authoritative NMI/ARI are from the aligned full-cohort best-fold clusters. NOTE: the DEC head collapsed to 4 effective clusters (of 11), which is why silhouette is high \u2014 temper claims of many distinct subtypes."
+}

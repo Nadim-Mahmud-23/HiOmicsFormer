@@ -1,0 +1,62 @@
+{
+  "transform_refactor": "added to MultiOmicsPreprocessor.transform() (leakage-free)",
+  "selftest": {
+    "transform_selftest_passed": true,
+    "per_modality": {
+      "mRNA": {
+        "out_shape": [
+          20,
+          2000
+        ],
+        "expected_cols": 2000,
+        "shape_ok": true,
+        "finite_ok": true,
+        "absent_feature_is_zero": true
+      },
+      "miRNA": {
+        "out_shape": [
+          20,
+          1434
+        ],
+        "expected_cols": 1434,
+        "shape_ok": true,
+        "finite_ok": true,
+        "absent_feature_is_zero": true
+      },
+      "Methy": {
+        "out_shape": [
+          20,
+          2000
+        ],
+        "expected_cols": 2000,
+        "shape_ok": true,
+        "finite_ok": true,
+        "absent_feature_is_zero": true
+      },
+      "CNV": {
+        "out_shape": [
+          20,
+          2000
+        ],
+        "expected_cols": 2000,
+        "shape_ok": true,
+        "finite_ok": true,
+        "absent_feature_is_zero": true
+      }
+    }
+  },
+  "external_cohort": {
+    "status": "NOT RUN \u2014 external cohort not in repo",
+    "expected_dir": "<repository>/data/external",
+    "steps_to_complete": [
+      "1. Place an independent multi-omics cohort with >=2 of {mRNA,miRNA,Methy,CNV} under data/external/ in the MLOmics layout (samples x features, HGNC symbols).",
+      "   Candidates: TARGET (GDC), CPTAC (LinkedOmics), ICGC-ARGO.",
+      "2. ext = CleanMLOmicsDataLoader(...).load_single_cancer(...)  # or custom loader",
+      "3. aligned = ExternalValidator(model, preprocessor, config, device).align_features(ext)",
+      "4. proc = preprocessor.transform(aligned)   # leakage-free (this refactor)",
+      "5. build MultiOmicsDataset+DataLoader on proc; forward model(eval) -> z,q",
+      "6. silhouette(z, argmax q); re-run AttentionBiomarkerExtractor -> Jaccard vs TCGA lists",
+      "7. if external survival present: stratified_survival_analysis(z, ...)."
+    ]
+  }
+}

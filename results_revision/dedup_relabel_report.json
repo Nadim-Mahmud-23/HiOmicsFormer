@@ -1,0 +1,29 @@
+{
+  "detected_duplicates": [
+    [
+      "COAD",
+      "THCA",
+      260,
+      1.0
+    ]
+  ],
+  "relabel_map": {
+    "THCA": "COAD"
+  },
+  "n_before": 3304,
+  "n_after": 3044,
+  "n_dropped": 260,
+  "types_after": [
+    "ACC",
+    "COAD",
+    "GBM",
+    "KIRC",
+    "KIRP",
+    "LGG",
+    "LIHC",
+    "LUSC",
+    "OV",
+    "PRAD",
+    "THYM"
+  ]
+}

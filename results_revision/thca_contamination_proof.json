@@ -1,0 +1,137 @@
+{
+  "thca_barcode_tss": {
+    "unique_tss_codes": [
+      "3L",
+      "4N",
+      "4T",
+      "5M",
+      "A6",
+      "AA",
+      "AD",
+      "AM",
+      "AU",
+      "AY",
+      "AZ",
+      "CA",
+      "CK",
+      "CM",
+      "D5",
+      "DM",
+      "F4",
+      "G4",
+      "NH",
+      "QG",
+      "QL",
+      "RU",
+      "SS",
+      "T9",
+      "WS"
+    ],
+    "n_samples": 291,
+    "n_with_colon_tss": 289,
+    "n_with_thyroid_tss": 0,
+    "fraction_colon": 0.9931
+  },
+  "barcode_overlap_thca_vs_gscoad": {
+    "n_thca": 291,
+    "n_gscoad": 260,
+    "n_shared": 260,
+    "frac_shared_of_smaller": 1.0
+  },
+  "numeric_identity_thca_vs_gscoad_mrna": {
+    "comparisons": 50000,
+    "n_differing": 49998,
+    "max_abs_diff": 3.1914221031316803,
+    "fraction_identical": 4e-05
+  },
+  "survival_thca_tss": {
+    "n": 291,
+    "n_colon_tss": 289,
+    "n_thyroid_tss": 0,
+    "unique_tss": [
+      "3L",
+      "4N",
+      "4T",
+      "5M",
+      "A6",
+      "AA",
+      "AD",
+      "AM",
+      "AU",
+      "AY",
+      "AZ",
+      "CA",
+      "CK",
+      "CM",
+      "D5",
+      "DM",
+      "F4",
+      "G4",
+      "NH",
+      "QG",
+      "QL",
+      "RU",
+      "SS",
+      "T9",
+      "WS"
+    ]
+  },
+  "synthetic_padding": {
+    "GS-GBM/mRNA": {
+      "total_features": 20684,
+      "padding_features": 2480,
+      "examples": [
+        "ZZEF1",
+        "ZZZ3",
+        "ZZEF2",
+        "ZZZ4",
+        "ZZEF3"
+      ]
+    },
+    "GS-LGG/mRNA": {
+      "total_features": 20684,
+      "padding_features": 2480,
+      "examples": [
+        "ZZEF1",
+        "ZZZ3",
+        "ZZEF2",
+        "ZZZ4",
+        "ZZEF3"
+      ]
+    },
+    "GS-GBM/Methy": {
+      "total_features": 24981,
+      "padding_features": 5935,
+      "examples": [
+        "ZZEF1",
+        "ZZZ3",
+        "ZZZ4",
+        "ZZZ5",
+        "ZZZ6"
+      ]
+    },
+    "LUSC/mRNA (clustering)": {
+      "total_features": 18599,
+      "padding_features": 2
+    },
+    "KIRC/mRNA (clustering)": {
+      "total_features": 18465,
+      "padding_features": 2
+    }
+  },
+  "dot_mangling": {
+    "GS-GBM_mRNA_dotted": 641,
+    "GS-GBM_total": 20684,
+    "LUSC_clustering_dotted": 6,
+    "LUSC_total": 18599
+  },
+  "VERDICT": {
+    "thca_is_mislabelled_colon": true,
+    "thca_duplicates_gscoad_patients": true,
+    "matrices_numerically_identical": false,
+    "correction_to_r2_claim": "R2 said the THCA omics/survival were 'identical' to GS-COAD; raw files show the SAME PATIENTS (100% barcode overlap, all colon TSS) but NON-identical processed values across archives. The manuscript must say 'same patients, different processing', not 'identical matrices'.",
+    "padding_confirmed_in_classification": true,
+    "synthetic_padding_in_clustering": false,
+    "basis": "raw CSVs read directly, no project loader/transpose"
+  }
+}

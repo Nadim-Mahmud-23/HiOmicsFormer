@@ -1,0 +1,55 @@
+{
+  "mRNA": {
+    "universe_numeric_serials": 26,
+    "universe_date_strings": 22,
+    "selected_numeric_serials": 5,
+    "selected_date_strings": 4,
+    "examples": [
+      "1-Dec",
+      "1-Mar",
+      "1-Sep",
+      "10-Mar",
+      "10-Sep",
+      "11-Sep"
+    ],
+    "universe_total_converted": 48
+  },
+  "miRNA": {
+    "universe_numeric_serials": 0,
+    "universe_date_strings": 0,
+    "selected_numeric_serials": 0,
+    "selected_date_strings": 0,
+    "examples": [],
+    "universe_total_converted": 0
+  },
+  "Methy": {
+    "universe_numeric_serials": 0,
+    "universe_date_strings": 26,
+    "selected_numeric_serials": 0,
+    "selected_date_strings": 1,
+    "examples": [
+      "1-Dec",
+      "1-Mar",
+      "1-Sep",
+      "10-Mar",
+      "10-Sep",
+      "11-Mar"
+    ],
+    "universe_total_converted": 26
+  },
+  "CNV": {
+    "universe_numeric_serials": 0,
+    "universe_date_strings": 26,
+    "selected_numeric_serials": 0,
+    "selected_date_strings": 0,
+    "examples": [
+      "1-Dec",
+      "1-Mar",
+      "1-Sep",
+      "10-Mar",
+      "10-Sep",
+      "11-Mar"
+    ],
+    "universe_total_converted": 26
+  }
+}

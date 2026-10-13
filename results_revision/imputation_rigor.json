@@ -1,0 +1,42 @@
+{
+  "mRNA": {
+    "top50_missingness_median": 0.0,
+    "top50_missingness_max": 0.0,
+    "overall_selected_missingness_median": 0.0,
+    "mad_rank50_value": 0.694909930229187,
+    "mad_rank51_value": 0.6948861479759216,
+    "mad_boundary_gap": 2.378225326538086e-05,
+    "n_zero_mad_features": 285,
+    "degenerate_all_equal": false
+  },
+  "miRNA": {
+    "top50_missingness_median": 0.0,
+    "top50_missingness_max": 0.0,
+    "overall_selected_missingness_median": 0.6934954007884363,
+    "mad_rank50_value": 0.6405574083328247,
+    "mad_rank51_value": 0.6402411460876465,
+    "mad_boundary_gap": 0.00031626224517822266,
+    "n_zero_mad_features": 841,
+    "degenerate_all_equal": false
+  },
+  "Methy": {
+    "top50_missingness_median": 0.0,
+    "top50_missingness_max": 0.00985545335085414,
+    "overall_selected_missingness_median": 0.0,
+    "mad_rank50_value": 0.7857994437217712,
+    "mad_rank51_value": 0.7855221033096313,
+    "mad_boundary_gap": 0.0002773404121398926,
+    "n_zero_mad_features": 1,
+    "degenerate_all_equal": false
+  },
+  "CNV": {
+    "top50_missingness_median": 0.0,
+    "top50_missingness_max": 0.0,
+    "overall_selected_missingness_median": 0.0,
+    "mad_rank50_value": 0.5185831785202026,
+    "mad_rank51_value": 0.5179487466812134,
+    "mad_boundary_gap": 0.0006344318389892578,
+    "n_zero_mad_features": 0,
+    "degenerate_all_equal": false
+  }
+}

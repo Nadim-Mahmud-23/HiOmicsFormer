@@ -1,0 +1,5 @@
+{
+  "attention_and_reconstruction_use_same_namespace": true,
+  "namespace_source": "MultiOmicsPreprocessor.get_feature_names(mod) == real data column symbols",
+  "note": "Raw MLOmics feature symbols are real (A1BG..ZZZ3). 'ZZZ3' is a real gene (last alphabetically); no ZZZ936/ZZZ737-style placeholders exist in the data or the notebook code. Fig 6c 'ZZZ936/ZZZ737' markers are not reproducible from the current pipeline."
+}

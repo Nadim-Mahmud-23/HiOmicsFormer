@@ -1,0 +1,52 @@
+{
+  "cv_summary": {
+    "silhouette": {
+      "mean": 0.4619607388973236,
+      "std": 0.0753876927966998
+    },
+    "nmi": {
+      "mean": 0.028518363146989377,
+      "std": 0.011469245857332482
+    },
+    "ari": {
+      "mean": -0.00043011918279753554,
+      "std": 0.0018820963920683673
+    }
+  },
+  "n_patients": 3304,
+  "n_cancer_types": 12,
+  "config": {
+    "data_path": "./data/MLOmics/Main_Dataset",
+    "results_path": "./results_revision",
+    "figures_path": "./figures_revision",
+    "modalities": "['mRNA', 'miRNA', 'Methy', 'CNV']",
+    "use_all_cancers": "True",
+    "data_variant": "Original",
+    "feature_selection_top_k": "2000",
+    "hidden_dim": "256",
+    "latent_dim": "128",
+    "num_encoder_layers": "4",
+    "num_heads": "8",
+    "num_feature_clusters": "16",
+    "group_sizes": "(16, 32, 64)",
+    "dropout": "0.1",
+    "num_cross_layers": "2",
+    "num_fusion_layers": "2",
+    "projection_dim": "128",
+    "num_clusters": "12",
+    "cluster_alpha": "1.0",
+    "contrastive_temperature": "0.07",
+    "lambda_recon": "1.0",
+    "lambda_CL": "0.1",
+    "lambda_DEC": "0.5",
+    "lambda_kl": "0.01",
+    "learning_rate": "0.0001",
+    "weight_decay": "1e-05",
+    "batch_size": "256",
+    "max_epochs": "200",
+    "patience": "20",
+    "warmup_epochs": "10",
+    "n_folds": "5",
+    "top_k_biomarkers": "50"
+  }
+}

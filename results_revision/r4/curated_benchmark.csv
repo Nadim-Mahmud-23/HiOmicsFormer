@@ -1,0 +1,121 @@
+model,modality,score,reference,test,panel_N,panel_in_reference,list_n,overlap,expected,fold,p,auc,fdr
+full-cohort model,mRNA,gradient,COSMIC CGC (v99),top-50 hypergeometric,2000,57,50,1,1.425,0.7017543859649122,0.7686851396472791,,1.0
+full-cohort model,mRNA,reconstruction,COSMIC CGC (v99),top-50 hypergeometric,2000,57,50,1,1.425,0.7017543859649122,0.7686851396472791,,1.0
+full-cohort model,mRNA,consensus,COSMIC CGC (v99),top-50 hypergeometric,2000,57,5,0,0.1425,0.0,1.0,,1.0
+full-cohort model,mRNA,gradient,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,57,2000,57,,,0.9688167323573499,0.4276891405043747,1.0
+full-cohort model,mRNA,reconstruction,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,57,2000,57,,,0.993901512312578,0.4027503137669186,1.0
+full-cohort model,mRNA,gradient,OncoKB cancer genes,top-50 hypergeometric,2000,122,50,1,3.05,0.3278688524590164,0.958723864501676,,1.0
+full-cohort model,mRNA,reconstruction,OncoKB cancer genes,top-50 hypergeometric,2000,122,50,1,3.05,0.3278688524590164,0.958723864501676,,1.0
+full-cohort model,mRNA,consensus,OncoKB cancer genes,top-50 hypergeometric,2000,122,5,0,0.305,0.0,1.0,,1.0
+full-cohort model,mRNA,gradient,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,122,2000,122,,,0.9890218833271798,0.4381928804622986,1.0
+full-cohort model,mRNA,reconstruction,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,122,2000,122,,,0.9993696696350062,0.41300476614466036,1.0
+full-cohort model,mRNA,gradient,MSigDB Hallmark,top-50 hypergeometric,2000,383,50,4,9.575,0.41775456919060056,0.9922954710198669,,1.0
+full-cohort model,mRNA,reconstruction,MSigDB Hallmark,top-50 hypergeometric,2000,383,50,2,9.575,0.20887728459530028,0.9997240630299962,,1.0
+full-cohort model,mRNA,consensus,MSigDB Hallmark,top-50 hypergeometric,2000,383,5,0,0.9575,0.0,1.0,,1.0
+full-cohort model,mRNA,gradient,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,383,2000,383,,,0.837403651296517,0.48385706050756405,1.0
+full-cohort model,mRNA,reconstruction,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,383,2000,383,,,0.9999999995640629,0.399393842512082,1.0
+full-cohort model,mRNA,gradient,MSigDB C6 oncogenic,top-50 hypergeometric,2000,868,50,13,21.7,0.599078341013825,0.9968062554014198,,1.0
+full-cohort model,mRNA,reconstruction,MSigDB C6 oncogenic,top-50 hypergeometric,2000,868,50,4,21.7,0.18433179723502305,0.9999999970644847,,1.0
+full-cohort model,mRNA,consensus,MSigDB C6 oncogenic,top-50 hypergeometric,2000,868,5,1,2.17,0.4608294930875576,0.9421353085968566,,1.0
+full-cohort model,mRNA,gradient,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,868,2000,868,,,0.9999422794265854,0.4497728419989904,1.0
+full-cohort model,mRNA,reconstruction,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,868,2000,868,,,1.0,0.35404691341941996,1.0
+full-cohort model,Methy,gradient,COSMIC CGC (v99),top-50 hypergeometric,2000,67,50,1,1.675,0.5970149253731343,0.8218790033685862,,1.0
+full-cohort model,Methy,reconstruction,COSMIC CGC (v99),top-50 hypergeometric,2000,67,50,1,1.675,0.5970149253731343,0.8218790033685862,,1.0
+full-cohort model,Methy,consensus,COSMIC CGC (v99),top-50 hypergeometric,2000,67,2,0,0.067,0.0,1.0,,1.0
+full-cohort model,Methy,gradient,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,67,2000,67,,,0.9829702105980211,0.42395626626309735,1.0
+full-cohort model,Methy,reconstruction,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,67,2000,67,,,0.5555339574348381,0.49499270332249773,1.0
+full-cohort model,Methy,gradient,OncoKB cancer genes,top-50 hypergeometric,2000,131,50,4,3.275,1.2213740458015268,0.4167537624851755,,1.0
+full-cohort model,Methy,reconstruction,OncoKB cancer genes,top-50 hypergeometric,2000,131,50,1,3.275,0.3053435114503817,0.9676409286033674,,1.0
+full-cohort model,Methy,consensus,OncoKB cancer genes,top-50 hypergeometric,2000,131,2,0,0.131,0.0,1.0,,1.0
+full-cohort model,Methy,gradient,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,131,2000,131,,,0.9868388925282701,0.4420292518757224,1.0
+full-cohort model,Methy,reconstruction,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,131,2000,131,,,0.5957747392500241,0.4936754356944768,1.0
+full-cohort model,Methy,gradient,MSigDB Hallmark,top-50 hypergeometric,2000,413,50,4,10.325,0.38740920096852305,0.9961389357726113,,1.0
+full-cohort model,Methy,reconstruction,MSigDB Hallmark,top-50 hypergeometric,2000,413,50,14,10.325,1.3559322033898307,0.13186897223941105,,1.0
+full-cohort model,Methy,consensus,MSigDB Hallmark,top-50 hypergeometric,2000,413,2,0,0.413,0.0,1.0,,1.0
+full-cohort model,Methy,gradient,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,413,2000,413,,,0.5679749388008448,0.4972697354870307,1.0
+full-cohort model,Methy,reconstruction,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,413,2000,413,,,0.11889770921937076,0.5188303574289285,1.0
+full-cohort model,Methy,gradient,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1055,50,26,26.375,0.985781990521327,0.5998653046590872,,1.0
+full-cohort model,Methy,reconstruction,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1055,50,19,26.375,0.7203791469194313,0.9882032451772086,,1.0
+full-cohort model,Methy,consensus,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1055,2,0,1.055,0.0,1.0,,1.0
+full-cohort model,Methy,gradient,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,1055,2000,1055,,,0.1453188483612085,0.5136668421976479,1.0
+full-cohort model,Methy,reconstruction,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,1055,2000,1055,,,0.9564272672425125,0.4778770781614384,1.0
+full-cohort model,CNV,gradient,COSMIC CGC (v99),top-50 hypergeometric,2000,58,50,2,1.45,1.3793103448275863,0.4293915976991293,,1.0
+full-cohort model,CNV,reconstruction,COSMIC CGC (v99),top-50 hypergeometric,2000,58,50,2,1.45,1.3793103448275863,0.4293915976991293,,1.0
+full-cohort model,CNV,consensus,COSMIC CGC (v99),top-50 hypergeometric,2000,58,4,0,0.116,0.0,1.0,,1.0
+full-cohort model,CNV,gradient,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,58,2000,58,,,0.3992391003241333,0.5098281188962677,1.0
+full-cohort model,CNV,reconstruction,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,58,2000,58,,,0.1993507981271943,0.5324762953229873,1.0
+full-cohort model,CNV,gradient,OncoKB cancer genes,top-50 hypergeometric,2000,117,50,2,2.925,0.6837606837606838,0.8021257214066071,,1.0
+full-cohort model,CNV,reconstruction,OncoKB cancer genes,top-50 hypergeometric,2000,117,50,4,2.925,1.3675213675213675,0.33498396934017144,,1.0
+full-cohort model,CNV,consensus,OncoKB cancer genes,top-50 hypergeometric,2000,117,4,0,0.234,0.0,1.0,,1.0
+full-cohort model,CNV,gradient,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,117,2000,117,,,0.743977651217143,0.48196413252175335,1.0
+full-cohort model,CNV,reconstruction,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,117,2000,117,,,0.6260441344996462,0.49116022350223093,1.0
+full-cohort model,CNV,gradient,MSigDB Hallmark,top-50 hypergeometric,2000,413,50,6,10.325,0.5811138014527846,0.963507512852004,,1.0
+full-cohort model,CNV,reconstruction,MSigDB Hallmark,top-50 hypergeometric,2000,413,50,7,10.325,0.6779661016949153,0.9176052989059355,,1.0
+full-cohort model,CNV,consensus,MSigDB Hallmark,top-50 hypergeometric,2000,413,4,0,0.826,0.0,1.0,,1.0
+full-cohort model,CNV,gradient,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,413,2000,413,,,0.02234861914967685,0.5320209144822262,1.0
+full-cohort model,CNV,reconstruction,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,413,2000,413,,,0.32657771019182996,0.5071685654172597,1.0
+full-cohort model,CNV,gradient,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1028,50,26,25.7,1.0116731517509727,0.5233232795315668,,1.0
+full-cohort model,CNV,reconstruction,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1028,50,26,25.7,1.0116731517509727,0.5233232795315668,,1.0
+full-cohort model,CNV,consensus,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1028,4,0,2.056,0.0,1.0,,1.0
+full-cohort model,CNV,gradient,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,1028,2000,1028,,,0.20041751797996005,0.5108535091511746,1.0
+full-cohort model,CNV,reconstruction,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,1028,2000,1028,,,0.18873033164870034,0.5114019391202703,1.0
+single-archive model,mRNA,gradient,COSMIC CGC (v99),top-50 hypergeometric,2000,56,50,1,1.4,0.7142857142857143,0.7625786227425084,,1.0
+single-archive model,mRNA,reconstruction,COSMIC CGC (v99),top-50 hypergeometric,2000,56,50,0,1.4,0.0,1.0,,1.0
+single-archive model,mRNA,consensus,COSMIC CGC (v99),top-50 hypergeometric,2000,56,1,0,0.028,0.0,1.0,,1.0
+single-archive model,mRNA,gradient,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,56,2000,56,,,0.1332373792368718,0.5434946355085244,1.0
+single-archive model,mRNA,reconstruction,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,56,2000,56,,,0.9855383312046185,0.41450800999412113,1.0
+single-archive model,mRNA,gradient,OncoKB cancer genes,top-50 hypergeometric,2000,114,50,2,2.85,0.7017543859649122,0.7899529709067774,,1.0
+single-archive model,mRNA,reconstruction,OncoKB cancer genes,top-50 hypergeometric,2000,114,50,0,2.85,0.0,1.0,,1.0
+single-archive model,mRNA,consensus,OncoKB cancer genes,top-50 hypergeometric,2000,114,1,0,0.057,0.0,1.0,,1.0
+single-archive model,mRNA,gradient,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,114,2000,114,,,0.12515085481113108,0.532018008967275,1.0
+single-archive model,mRNA,reconstruction,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,114,2000,114,,,0.9997364936617039,0.4034599356291046,1.0
+single-archive model,mRNA,gradient,MSigDB Hallmark,top-50 hypergeometric,2000,350,50,8,8.75,0.9142857142857143,0.6697558804997099,,1.0
+single-archive model,mRNA,reconstruction,MSigDB Hallmark,top-50 hypergeometric,2000,350,50,1,8.75,0.11428571428571428,0.9999417601028181,,1.0
+single-archive model,mRNA,consensus,MSigDB Hallmark,top-50 hypergeometric,2000,350,1,0,0.175,0.0,1.0,,1.0
+single-archive model,mRNA,gradient,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,350,2000,350,,,0.21667011144194176,0.5133142857142857,1.0
+single-archive model,mRNA,reconstruction,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,350,2000,350,,,0.9999996722179915,0.4154787878787879,1.0
+single-archive model,mRNA,gradient,MSigDB C6 oncogenic,top-50 hypergeometric,2000,879,50,17,21.975,0.7736063708759954,0.9443552037971517,,1.0
+single-archive model,mRNA,reconstruction,MSigDB C6 oncogenic,top-50 hypergeometric,2000,879,50,6,21.975,0.27303754266211605,0.9999998549356748,,1.0
+single-archive model,mRNA,consensus,MSigDB C6 oncogenic,top-50 hypergeometric,2000,879,1,0,0.4395,0.0,1.0,,1.0
+single-archive model,mRNA,gradient,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,879,2000,879,,,0.693515378183174,0.493420164630353,1.0
+single-archive model,mRNA,reconstruction,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,879,2000,879,,,1.0,0.3740139380672425,1.0
+single-archive model,Methy,gradient,COSMIC CGC (v99),top-50 hypergeometric,2000,37,50,1,0.925,1.081081081081081,0.6114774448109123,,1.0
+single-archive model,Methy,reconstruction,COSMIC CGC (v99),top-50 hypergeometric,2000,37,50,1,0.925,1.081081081081081,0.6114774448109123,,1.0
+single-archive model,Methy,consensus,COSMIC CGC (v99),top-50 hypergeometric,2000,37,1,0,0.0185,0.0,1.0,,1.0
+single-archive model,Methy,gradient,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,37,2000,37,,,0.22508043100549308,0.5361897812228938,1.0
+single-archive model,Methy,reconstruction,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,37,2000,37,,,0.5329771510780205,0.4960416351144828,1.0
+single-archive model,Methy,gradient,OncoKB cancer genes,top-50 hypergeometric,2000,98,50,1,2.45,0.4081632653061224,0.9214613348991714,,1.0
+single-archive model,Methy,reconstruction,OncoKB cancer genes,top-50 hypergeometric,2000,98,50,3,2.45,1.2244897959183672,0.44756194923448567,,1.0
+single-archive model,Methy,consensus,OncoKB cancer genes,top-50 hypergeometric,2000,98,1,0,0.049,0.0,1.0,,1.0
+single-archive model,Methy,gradient,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,98,2000,98,,,0.4551919155258528,0.5033691710122535,1.0
+single-archive model,Methy,reconstruction,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,98,2000,98,,,0.3888117375070358,0.5084497521406038,1.0
+single-archive model,Methy,gradient,MSigDB Hallmark,top-50 hypergeometric,2000,392,50,9,9.8,0.9183673469387754,0.670180439876291,,1.0
+single-archive model,Methy,reconstruction,MSigDB Hallmark,top-50 hypergeometric,2000,392,50,8,9.8,0.8163265306122448,0.7935240653744782,,1.0
+single-archive model,Methy,consensus,MSigDB Hallmark,top-50 hypergeometric,2000,392,1,0,0.196,0.0,1.0,,1.0
+single-archive model,Methy,gradient,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,392,2000,392,,,0.20285227149550122,0.5135245329475073,1.0
+single-archive model,Methy,reconstruction,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,392,2000,392,,,0.963382528256036,0.47086474515179205,1.0
+single-archive model,Methy,gradient,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1052,50,30,26.3,1.1406844106463878,0.17951497060425042,,1.0
+single-archive model,Methy,reconstruction,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1052,50,24,26.3,0.9125475285171103,0.7891590437773607,,1.0
+single-archive model,Methy,consensus,MSigDB C6 oncogenic,top-50 hypergeometric,2000,1052,1,1,0.526,1.9011406844106462,0.526,,1.0
+single-archive model,Methy,gradient,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,1052,2000,1052,,,0.2609791491860274,0.5082803901750332,1.0
+single-archive model,Methy,reconstruction,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,1052,2000,1052,,,0.9998980851956561,0.45197313535800804,1.0
+single-archive model,CNV,gradient,COSMIC CGC (v99),top-50 hypergeometric,2000,57,50,2,1.425,1.4035087719298245,0.4206136760753386,,1.0
+single-archive model,CNV,reconstruction,COSMIC CGC (v99),top-50 hypergeometric,2000,57,50,2,1.425,1.4035087719298245,0.4206136760753386,,1.0
+single-archive model,CNV,consensus,COSMIC CGC (v99),top-50 hypergeometric,2000,57,2,0,0.057,0.0,1.0,,1.0
+single-archive model,CNV,gradient,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,57,2000,57,,,0.7900990795120808,0.4687000568843622,1.0
+single-archive model,CNV,reconstruction,COSMIC CGC (v99),"rank (Mann-Whitney, all 2,000)",2000,57,2000,57,,,0.028565399346912896,0.5738187465575931,1.0
+single-archive model,CNV,gradient,OncoKB cancer genes,top-50 hypergeometric,2000,116,50,3,2.9,1.0344827586206897,0.5628134893346275,,1.0
+single-archive model,CNV,reconstruction,OncoKB cancer genes,top-50 hypergeometric,2000,116,50,5,2.9,1.7241379310344829,0.16036264227835112,,1.0
+single-archive model,CNV,consensus,OncoKB cancer genes,top-50 hypergeometric,2000,116,2,0,0.116,0.0,1.0,,1.0
+single-archive model,CNV,gradient,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,116,2000,116,,,0.09621304177404494,0.5360064792444542,1.0
+single-archive model,CNV,reconstruction,OncoKB cancer genes,"rank (Mann-Whitney, all 2,000)",2000,116,2000,116,,,0.35181659369253376,0.5105104692876492,1.0
+single-archive model,CNV,gradient,MSigDB Hallmark,top-50 hypergeometric,2000,378,50,10,9.45,1.0582010582010584,0.4781546156187575,,1.0
+single-archive model,CNV,reconstruction,MSigDB Hallmark,top-50 hypergeometric,2000,378,50,9,9.45,0.9523809523809524,0.6233788745210649,,1.0
+single-archive model,CNV,consensus,MSigDB Hallmark,top-50 hypergeometric,2000,378,2,0,0.378,0.0,1.0,,1.0
+single-archive model,CNV,gradient,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,378,2000,378,,,0.08111606542784044,0.5230494718780785,1.0
+single-archive model,CNV,reconstruction,MSigDB Hallmark,"rank (Mann-Whitney, all 2,000)",2000,378,2000,378,,,0.4581949585474174,0.5017321355175856,1.0
+single-archive model,CNV,gradient,MSigDB C6 oncogenic,top-50 hypergeometric,2000,994,50,23,24.85,0.9255533199195171,0.7493333036770171,,1.0
+single-archive model,CNV,reconstruction,MSigDB C6 oncogenic,top-50 hypergeometric,2000,994,50,25,24.85,1.0060362173038229,0.5397580169431002,,1.0
+single-archive model,CNV,consensus,MSigDB C6 oncogenic,top-50 hypergeometric,2000,994,2,1,0.994,1.0060362173038229,0.7471160580290146,,1.0
+single-archive model,CNV,gradient,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,994,2000,994,,,0.21248075941163463,0.5103033709213531,1.0
+single-archive model,CNV,reconstruction,MSigDB C6 oncogenic,"rank (Mann-Whitney, all 2,000)",2000,994,2000,994,,,0.03967410347579204,0.5226568156453633,1.0

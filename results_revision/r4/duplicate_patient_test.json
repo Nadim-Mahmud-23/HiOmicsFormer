@@ -1,0 +1,112 @@
+{
+  "n_duplicate_patients": 260,
+  "raw_value_comparison": {
+    "mRNA": {
+      "shared_features": 17261,
+      "compared_values": 4487860,
+      "fraction_identical_(abs_diff<1e-6)": 3.1418092364735085e-05,
+      "median_abs_diff": 0.0211249889082325,
+      "max_abs_diff": 6.99848344512088,
+      "pearson_r_all_values": 0.9976279021207638
+    },
+    "miRNA": {
+      "shared_features": 375,
+      "compared_values": 97500,
+      "fraction_identical_(abs_diff<1e-6)": 4.1025641025641023e-05,
+      "median_abs_diff": 0.019554845381669475,
+      "max_abs_diff": 0.35025989957269,
+      "pearson_r_all_values": 0.9995189725494128
+    },
+    "Methy": {
+      "shared_features": 19052,
+      "compared_values": 4953520,
+      "fraction_identical_(abs_diff<1e-6)": 2.9070236922430918e-05,
+      "median_abs_diff": 0.019887032976174515,
+      "max_abs_diff": 5.0112983994345095,
+      "pearson_r_all_values": 0.9984155397191843
+    },
+    "CNV": {
+      "shared_features": 19551,
+      "compared_values": 5083260,
+      "fraction_identical_(abs_diff<1e-6)": 3.85579332947754e-05,
+      "median_abs_diff": 0.016167216270420004,
+      "max_abs_diff": 2.02377830384593,
+      "pearson_r_all_values": 0.9994462066700944
+    }
+  },
+  "missing_fraction_selected_features": {
+    "clustering_copy": {
+      "mRNA": 0.1475,
+      "miRNA": 0.7384937238493724,
+      "Methy": 0.001,
+      "CNV": 0.0
+    },
+    "classification_copy": {
+      "mRNA": 0.1475,
+      "miRNA": 0.7384937238493724,
+      "Methy": 0.001,
+      "CNV": 0.0
+    }
+  },
+  "model_free": {
+    "mRNA": {
+      "median_corr_same_patient_across_archives": 0.9990505486555268,
+      "median_corr_different_patients_same_archive": -0.010481450879719521,
+      "median_dist_same_patient_across_archives": 1.850785493850708,
+      "median_dist_different_patients_same_archive": 58.9116096496582,
+      "frac_pairs_twin_farther_than_random_other": 0.0,
+      "archive_auc_patient_grouped_cv": 0.6625295857988165
+    },
+    "miRNA": {
+      "median_corr_same_patient_across_archives": 0.9994650110456536,
+      "median_corr_different_patients_same_archive": -0.018639648333399164,
+      "median_dist_same_patient_across_archives": 0.6336941123008728,
+      "median_dist_different_patients_same_archive": 27.322433471679688,
+      "frac_pairs_twin_farther_than_random_other": 0.0,
+      "archive_auc_patient_grouped_cv": 0.5915532544378699
+    },
+    "Methy": {
+      "median_corr_same_patient_across_archives": 0.9987564643302326,
+      "median_corr_different_patients_same_archive": -0.007527889351889838,
+      "median_dist_same_patient_across_archives": 2.159646511077881,
+      "median_dist_different_patients_same_archive": 65.6312026977539,
+      "frac_pairs_twin_farther_than_random_other": 0.0,
+      "archive_auc_patient_grouped_cv": 0.6359023668639052
+    },
+    "CNV": {
+      "median_corr_same_patient_across_archives": 0.999447047454266,
+      "median_corr_different_patients_same_archive": -0.008584556350701432,
+      "median_dist_same_patient_across_archives": 1.6702897548675537,
+      "median_dist_different_patients_same_archive": 68.17030334472656,
+      "frac_pairs_twin_farther_than_random_other": 0.0,
+      "archive_auc_patient_grouped_cv": 0.6068786982248521
+    }
+  },
+  "frozen_model": {
+    "pc1_variance_pct": 99.66841888427734,
+    "cohort_pc1_mean_clustering_archive": -1.939439296722412,
+    "cohort_pc1_mean_classification_archive": 5.678175926208496,
+    "classification_cluster_id": 0,
+    "clustering_copy": {
+      "pc1_mean": -1.8501225709915161,
+      "pc1_sd": 0.2108125537633896,
+      "frac_assigned_to_classification_cluster": 0.0,
+      "cluster_counts": {
+        "7": 260
+      }
+    },
+    "classification_copy": {
+      "pc1_mean": -1.8488765954971313,
+      "pc1_sd": 0.21062500774860382,
+      "frac_assigned_to_classification_cluster": 0.0,
+      "cluster_counts": {
+        "7": 260
+      }
+    },
+    "paired_pc1_shift_mean": 0.0012459636200219393,
+    "paired_pc1_shift_as_fraction_of_archive_gap": 0.0001635634689591825,
+    "frac_pairs_classification_copy_higher_pc1": 0.573076923076923,
+    "auc_pc1_separating_copies": 0.5022633136094674,
+    "wilcoxon_p_paired_pc1": 0.0030041560530662537
+  }
+}

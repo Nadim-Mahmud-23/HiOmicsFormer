@@ -1,109 +1,80 @@
 # HiOmicsFormer
 
-A hierarchical multi-modal transformer framework for pan-cancer biomarker discovery and molecular subtype stratification.
+Code and results for the manuscript
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green.svg)
+> **HiOmicsFormer revisited: normalisation artefacts in a public multi-omics benchmark explain apparent pan-cancer subtypes**
+> Nadim Mahmud Dipu, Department of Computer Science and Engineering, Brac University (revised submission, 2026).
 
-## Overview
+HiOmicsFormer is a multi-omics transformer (per-modality multi-scale transformer encoders, a
+self-supervised cross-modal contrastive loss, gated cross-modal attention, a variational latent space
+and a deep-embedded-clustering head) applied to mRNA, miRNA, DNA-methylation and copy-number profiles
+of TCGA tumours distributed by the [MLOmics](https://huggingface.co/datasets/AIBIC/MLOmics) benchmark.
 
-HiOmicsFormer integrates four omics modalities -- mRNA expression, miRNA expression, DNA methylation, and copy number variation -- from TCGA pan-cancer data to perform molecular subtype discovery and biomarker identification. The framework combines modality-specific transformer encoders, cross-omics supervised contrastive learning, gated multi-modal fusion, and deep embedded clustering to produce biologically interpretable subtypes across 12 cancer types.
+## Status of the results
 
-This work accompanies the paper submitted to *Advances in Biomarker Sciences and Technology* (Elsevier/KeAi).
+The first submission reported pan-cancer subtypes and candidate biomarkers. A re-evaluation, carried
+out for the revision and fully reproducible from this repository, showed that those results do not
+hold:
 
-## Architecture
+- **Defects in the analysed MLOmics files.**
+  - The folder labelled thyroid (THCA) contains colon data duplicated from GS-COAD.
+  - Some classification-archive files contain placeholder feature columns and mangled gene symbols.
+  - The files do not share a scale: 11 of 14 folders are z-scored within each file, whereas the GBM, LGG and OV files are not.
+- **Errors in the original analysis.**
+  - The clustering evaluation misaligned labels and predictions.
+  - The data loader silently skipped two cancer types.
+  - The written method description did not match the code (the model is unsupervised).
+- **The re-evaluation.**
+  - The model's apparent pan-cancer clusters separate the three differently scaled files from all others.
+  - Within cancer types, the learned representation matches established TCGA subtypes less well than principal components of its input.
+  - It shows no curated-gene enrichment and no more prognostic information than its input.
 
-![Architecture](figures/fig3_training_embeddings.png)
+The notebook in `notebooks/` and the figures in `figures/` are those of the **original submission** and
+are kept for provenance only; their numbers are superseded.
 
-The framework consists of five main components:
+## Repository layout
 
-1. **Hierarchical tokenization** -- Structures high-dimensional omics features into biologically informed token sequences.
-2. **Modality-specific transformer encoders** -- Learns representations independently for each omics modality.
-3. **Cross-omics supervised contrastive learning** -- Aligns representations across modalities using label-aware contrastive objectives.
-4. **Gated multi-modal fusion** -- Adaptively combines modality-specific representations through learned gating mechanisms.
-5. **Deep embedded clustering (DEC)** -- Jointly optimizes feature representations and cluster assignments.
+| Path | Content |
+|---|---|
+| `r2/nbdefs.py` | model, training, baselines and feature scores — the code of the original notebook, extracted verbatim |
+| `r2/clean_loader.py` | data loading and curation (placeholder removal, name harmonisation, relabelling and de-duplication; opt-in corrected loader) |
+| `r3/` | cohort preparation (`prep.py`), five-fold training (`train.py`), cluster-count sweep, data-defect proof |
+| `r4/` | revision analyses, tables and figures; `r4/README.md` maps each script to its output and to the reviewers' points |
+| `results_revision/` | result files behind every number in the manuscript (`r4/`, `all_uncorrected/`, `single_archive/`; older files kept for provenance) |
+| `notebooks/`, `figures/` | original submission (superseded) |
 
-## Key Results
+## Reproducing the results
 
-| Metric | Value |
-|--------|-------|
-| Silhouette Score (5-fold CV) | 0.462 +/- 0.075 |
-| Within-cancer Subtype Silhouette | 0.821 (mean across 12 types) |
-| Multi-seed Stability (CV) | 8.2% |
-| Biomarker Jaccard Stability (MICE vs Mean) | >= 0.79 |
-
-## Dataset
-
-This study uses data from 3,304 TCGA patients across 12 cancer types, accessed through the MLOmics repository.
-
-Raw multi-omics data is not included in this repository due to size. See `data/DATA_ACCESS.md` for access instructions.
-
-## Repository Structure
-
-```
-HiOmicsFormer/
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── requirements.txt
-├── .gitignore
-├── notebooks/
-│   ├── HiOmicsFormer_Revised_R1_Final.ipynb
-│   └── HiOmicsFormer_Revised_R1_Final.html
-├── figures/
-│   ├── fig1_dataset_overview.png
-│   ├── fig2_preprocessing.png
-│   ├── fig3_training_embeddings.png
-│   ├── fig4_baseline_comparison.png
-│   ├── fig5_biomarkers.png
-│   ├── fig6_enrichment.png
-│   ├── fig7_survival_analysis.png
-│   ├── fig8_imputation_sensitivity.png
-│   └── fig9_subanalysis.png
-└── data/
-    └── DATA_ACCESS.md
-```
-
-## Reproduction
-
-1. Clone the repository:
+1. **Data.** Download MLOmics at the pinned commit `d7c2239504dcf817ee9f33a693f9617d614eef67`.
+   Only the `Original` folders of `Main_Dataset/Clustering_datasets/*` and
+   `Main_Dataset/Classification_datasets/GS-*` are used (70 files, 4.15 GB). Place them under
+   `data/MLOmics/` and verify them:
    ```bash
-   git clone https://github.com/Nadim-Mahmud-23/HiOmicsFormer.git
-   cd HiOmicsFormer
+   sh r4/verify_sha256.sh r4/mlomics_manifest_d7c2239.tsv data/MLOmics
    ```
-
-2. Install dependencies:
+   See `data/DATA_ACCESS.md`. Later MLOmics releases (the THCA folder was replaced on 22 Sep 2026)
+   will not reproduce these results.
+2. **Reference annotations** (PanCanAtlas subtypes, OncoKB/COSMIC gene list, MSigDB Hallmark and C6),
+   which are not redistributed here:
    ```bash
-   pip install -r requirements.txt
+   sh r4/fetch_external.sh
    ```
-
-3. Download the data following the instructions in `data/DATA_ACCESS.md`.
-
-4. Open and run the notebook:
+3. **Environment.** `pip install -r requirements.txt` (Python 3.14; Apple-silicon MPS or CPU).
+4. **Run everything:**
    ```bash
-   jupyter notebook notebooks/HiOmicsFormer_Revised_R1_Final.ipynb
+   bash r4/run_all.sh
    ```
+   Training is deterministic under fixed seeds. A five-fold run takes about 30–50 minutes on Apple silicon.
 
-A pre-rendered HTML version of the notebook with all outputs is available at `notebooks/HiOmicsFormer_Revised_R1_Final.html` for inspection without execution.
+The two trained models (`results_revision/all_uncorrected/best_model.pt`,
+`results_revision/single_archive/best_model.pt`, 206 MB each) are attached to the repository's
+GitHub release.
 
 ## Citation
 
-```bibtex
-@article{dipu2025hiomicsformer,
-  title={HiOmicsFormer: A Hierarchical Multi-Modal Transformer Framework with Cross-Omics Contrastive Learning for Pan-Cancer Biomarker Discovery and Molecular Subtype Stratification},
-  author={Dipu, Nadim Mahmud},
-  journal={Advances in Biomarker Sciences and Technology},
-  year={2025},
-  note={Under review}
-}
-```
+See `CITATION.cff`. Please also cite MLOmics (Yang et al., *Scientific Data* 12:913, 2025) and the
+TCGA Research Network.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Contact
-
-Nadim Mahmud Dipu
-Department of Computer Science and Engineering, Brac University, Dhaka, Bangladesh
-Email: nadim.mahmud.dipu@g.bracu.ac.bd
+MIT (see `LICENSE`). Third-party data remain under their providers' terms.
